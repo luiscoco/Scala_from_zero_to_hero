@@ -1,5 +1,9 @@
 # Udemy_Scala_desde_cero
 
+https://superruzafa.github.io/visual-scala-reference/
+
+https://github.com/vadopolski?page=2&tab=repositories
+
 1. Introducción al lenguaje Scala.
 
 2. Diferencias básicas con Java.
