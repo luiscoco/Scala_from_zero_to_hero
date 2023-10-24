@@ -627,6 +627,73 @@ It's important to note that the last expression in the block is the value of the
 
 ## 15. Operators
 
+In Scala, operators are special symbols that represent computations involving one or more operands. 
+
+Let me give you some examples of commonly used operators in Scala:
+
+#### Arithmetic Operators:
+
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)
+% (modulo)
+
+```scala
+val sum = 5 + 3
+val difference = 7 - 2
+val product = 4 * 6
+val quotient = 10 / 2
+val remainder = 15 % 4
+```
+
+#### Relational Operators:
+
+== (equal to)
+!= (not equal to)
+< (less than)
+> (greater than)
+<= (less than or equal to)
+>= (greater than or equal to)
+
+```scala
+val isEqual = 5 == 5
+val notEqual = 10 != 3
+val lessThan = 8 < 12
+val greaterThan = 15 > 9
+val lessThanOrEqual = 20 <= 20
+val greaterThanOrEqual = 25 >= 18
+```
+
+#### Logical Operators:
+
+&& (logical AND)
+|| (logical OR)
+! (logical NOT)
+
+```scala
+val andResult = (true && false)
+val orResult = (true || false)
+val notResult = !true
+```
+
+#### Bitwise Operators:
+
+& (bitwise AND)
+| (bitwise OR)
+^ (bitwise XOR)
+<< (left shift)
+>> (right shift)
+>>> (unsigned right shift)
+
+```scala
+val bitwiseAnd = 5 & 3
+val bitwiseOr = 5 | 3
+val bitwiseXor = 5 ^ 3
+val leftShift = 8 << 2
+val rightShift = 16 >> 2
+```
+
 ## 16. Conditions. IF command
 
 ## 17. Loops
