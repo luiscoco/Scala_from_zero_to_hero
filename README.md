@@ -1130,102 +1130,268 @@ And the following figure shows all collections in package scala.collection.mutab
 
 ![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/fa21af93-e143-43d2-89f4-e76cf6dfa5aa)
 
+In Scala, mutable collections provide a way to modify, add, or remove elements. Here are some examples:
 
+#### Lists:
+
+```scala
+Copy code
+import scala.collection.mutable.ListBuffer
+
+// Create a mutable ListBuffer
+val mutableList = ListBuffer(1, 2, 3)
+
+// Add elements to the ListBuffer
+mutableList += 4
+mutableList ++= List(5, 6)
+
+// Remove elements from the ListBuffer
+mutableList -= 2
+
+// Print the mutable list
+println(mutableList)
+```
+
+#### Sets:
+
+```scala
+import scala.collection.mutable.HashSet
+
+// Create a mutable HashSet
+val mutableSet = HashSet(1, 2, 3)
+
+// Add elements to the HashSet
+mutableSet += 4
+mutableSet ++= Set(5, 6)
+
+// Remove elements from the HashSet
+mutableSet -= 2
+
+// Print the mutable set
+println(mutableSet)
+```
+
+#### Maps:
+```scala
+import scala.collection.mutable.HashMap
+
+// Create a mutable HashMap
+val mutableMap = HashMap("a" -> 1, "b" -> 2, "c" -> 3)
+
+// Add key-value pairs to the HashMap
+mutableMap += ("d" -> 4)
+mutableMap ++= Map("e" -> 5, "f" -> 6)
+
+// Remove key-value pairs from the HashMap
+mutableMap -= "b"
+
+// Print the mutable map
+println(mutableMap)
+```
+
+These examples use ListBuffer, HashSet, and HashMap from the mutable package in Scala. 
+
+Remember, while mutable collections offer flexibility, it's generally recommended to use immutable collections whenever possible to avoid unexpected side effects in your code.
 
 ## 24. List
 
+
+
 ## 25. List operations
+
+
 
 ## 26. More operations with List
 
+
+
 ## 27. ListBuffer
+
+
 
 ## 28. Array
 
+
+
 ## 29. ArrayBuffer
+
+
 
 ## 30. Set
 
+
+
 ## 31. Map
+
+
 
 ## 32. Functions
 
+
+
 ## 33. Procedures. Functions that do not return a value
+
+
 
 ## 34. Functions with parameters
 
+
+
 ## 35. Named parameters
+
+
 
 ## 36. Default parameters
 
+
+
 ## 37. Variable number of paramters
+
+
 
 ## 38. How to create an application with IntelliJ IDEA
 
+
+
 ## 39. My first application with Scala
+
+
 
 ## 40. Crear una aplicación con el método "main".
 
+
+
+
 ## 41. Compile with scalac
+
+
+
 
 ## 42. Clases Parte 1.
 
+
+
 ## 43. Clases Parte 2.
+
+
 
 ## 44. Herencia.
 
+
+
 ## 45. Traits Parte 1.
+
+
 
 ## 46. Traits Parte 2.
 
+
+
 ## 47. Traits Múltiples.
+
+
 
 ## 48. Modificadores de acceso: private, public, protected.
 
+
+
 ## 49. Constructores.
+
+
+
 
 ## 50. Constructores auxiliares.
 
+
+
+
 ## 51. Constructores múltiples.
+
+
+
 
 ## 52. Singleton Objects.
 
+
+
+
 ## 53. Companion Objects.
+
+
+
 
 ## 54. Crear Instancias son NEW.
 
+
+
+
 ## 55. Case Class.
 
+
+
+
 ## 56. Clases Abstractas.
+
+
+
+
 
 # Programación funcional.
 
 ## 57. High Order Functrions.
 
+
+
 ## 58. Funciones anónimas. Functions literals.
+
+
 
 ## 59. Funciones con parámetros.
 
+
+
 ## 60. Funciones como variable.
+
+
 
 ## 61. Devolver una función.
 
+
+
 ## 62. Partially Applied Functions.
+
+
 
 ## 63. Currying Functions.
 
+
+
 ## 64. Closures.
+
+
 
 ## 65. Options.
 
+
+
 ## 66. Exceptions. Try Catch.
+
+
 
 ## 67. Exceptions, finally.
 
+
+
 ## 68. Exceptions, Throw.
+
+
 
 ## 69. Sobrecarga. Overloading.
 
+
+
 ## 70. Leer ficheros de texto.
 
-71. Escribir y leer ficheros binarios.
+
+
+## 71. Escribir y leer ficheros binarios.
