@@ -6,7 +6,7 @@ https://github.com/vadopolski?page=2&tab=repositories
 
 https://www.scala-sbt.org/download.html
 
-## Introducción al lenguaje Scala.
+## 1. Introducción al lenguaje Scala.
 
 Scala is a powerful programming language that seamlessly combines object-oriented and functional programming paradigms. Here's a brief introduction:
 
