@@ -196,6 +196,11 @@ While Java remains a dominant language in the industry, Scala offers a more expr
 
 ## 3. Un recorrido por la página web de Scala.
 
+https://docs.scala-lang.org/
+
+https://docs.scala-lang.org/getting-started/index.html
+
+https://docs.scala-lang.org/tour/tour-of-scala.html
 
 ## 4. Tipos de descarga del software de Scala.
 
