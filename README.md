@@ -694,6 +694,81 @@ val leftShift = 8 << 2
 val rightShift = 16 >> 2
 ```
 
+Let's delve into some more advanced topics related to operators in Scala:
+
+#### Pattern Matching:
+
+Scala has a powerful feature called pattern matching, which can be used as a more flexible and powerful alternative to traditional switch statements in other languages. It allows you to match complex patterns and destructure data.
+
+```scala
+val day = "Monday"
+
+val result = day match {
+  case "Monday" => "Start of the week"
+  case "Friday" | "Saturday" | "Sunday" => "Weekend"
+  case _ => "Midweek blues"
+}
+```
+
+In this example, the match expression checks the value of day against different patterns and produces a result accordingly.
+
+#### Operator Overloading:
+
+Scala supports operator overloading, which means you can define your own meaning for operators when used with instances of your classes. 
+
+This is achieved by defining methods with symbolic names.
+
+```scala
+class Complex(real: Double, imaginary: Double) {
+  def +(that: Complex): Complex =
+    new Complex(this.real + that.real, this.imaginary + that.imaginary)
+
+  override def toString: String = s"$real + ${imaginary}i"
+}
+
+val c1 = new Complex(1.0, 2.0)
+val c2 = new Complex(2.0, 3.0)
+val sum = c1 + c2
+println(sum)  // Output: 3.0 + 5.0i
+```
+
+Here, the + operator is overloaded to perform addition of two Complex instances.
+
+#### Infix Notation:
+
+In Scala, methods that take a single parameter can be used with infix notation. 
+
+This allows you to write expressive and readable code.
+
+```scala
+class Person(name: String) {
+  def says(message: String): String = s"$name says: $message"
+}
+
+val john = new Person("John")
+val greeting = john says "Hello, Scala!"
+```
+
+The says method is used in infix notation here, making the code read like a sentence.
+
+#### Type-Safe Equality:
+
+In Scala, you can use == for structural equality and eq for reference equality. 
+
+The == operator is type-safe and avoids some common pitfalls present in other languages.
+
+```scala
+val x: Int = 5
+val y: String = "5"
+
+// Type-safe equality
+val isEqual: Boolean = x == 5  // true
+val isNotEqual: Boolean = x == y  // false
+```
+
+It's generally recommended to use == for equality comparisons.
+
+
 ## 16. Conditions. IF command
 
 ## 17. Loops
