@@ -208,7 +208,7 @@ https://www.scala-lang.org/download/
 
 ## 5. Scala installation
 
-
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/014cd787-48d9-4e34-97db-1fd03df9bb58)
 
 ## 6. IntelliJ installation (Commnunity edition)
 
