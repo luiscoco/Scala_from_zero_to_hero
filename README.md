@@ -6,7 +6,7 @@ https://github.com/vadopolski?page=2&tab=repositories
 
 https://www.scala-sbt.org/download.html
 
-## 1. Introducción al lenguaje Scala.
+## 1. Scala introduction
 
 Scala is a powerful programming language that seamlessly combines object-oriented and functional programming paradigms. Here's a brief introduction:
 
@@ -119,7 +119,7 @@ In this example:
 
 Feel free to run this Scala code in an environment that supports Scala, and you should see the factorial of 5 printed to the console.
 
-## 2. Diferencias básicas con Java.
+## 2. Main differences between Scala and Java
 
 Here are some basic differences between Scala and Java:
 
@@ -194,7 +194,7 @@ These differences highlight the unique features and design principles of each la
 While Java remains a dominant language in the industry, Scala offers a more expressive and scalable alternative, especially for those interested in functional programming.
 
 
-## 3. Un recorrido por la página web de Scala.
+## 3. Scala web pages
 
 https://docs.scala-lang.org/
 
@@ -202,21 +202,21 @@ https://docs.scala-lang.org/getting-started/index.html
 
 https://docs.scala-lang.org/tour/tour-of-scala.html
 
-## 4. Tipos de descarga del software de Scala.
+## 4. Scala download
 
 https://www.scala-lang.org/download/
 
-## 5. Instalación manual.
+## 5. Scala installation
 
-## 6. Instalación de IntelliJ Idea (Commnunity version).
+## 6. IntelliJ installation (Commnunity edition)
 
 
 
-## 7. Ejemplo. Crear un proyecto de IntelliJ.
+## 7.How to create a Scala project in IntelliJ
 
-## 8. Introducción a REPL. Herramienta en modo comando.
+## 8. Introduction to REPL. Command tools
 
-## 9. Tipos de Datos.
+## 9. Data types
 
 Scala is a statically-typed language, which means that the type of a variable is known at compile time. Here are some basic data types in Scala:
 
