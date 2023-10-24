@@ -68,7 +68,7 @@ In summary, Scala is a versatile language that brings together the best of both 
 
 Its interoperability with Java and focus on conciseness make it a compelling choice for a wide range of applications.
 
-### First Scala sample
+### First Scala sample:
 
 Let's create a simple example that incorporates some of Scala's features. 
 
