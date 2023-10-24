@@ -572,6 +572,59 @@ Comments are useful for documenting your code, providing explanations for comple
 
 ## 14. Blocks
 
+In Scala, "blocks" usually refer to a sequence of expressions enclosed in curly braces {}. 
+
+These blocks can be used in various contexts, such as defining a code block for a function, conditionals, loops, or even just a standalone block.
+
+### Code Block:
+
+```scala
+// defining a block for a function
+def greet(name: String): Unit = {
+  println(s"Hello, $name!")
+}
+
+// using the function with a block
+greet("Alice")
+```
+
+### Conditional Block:
+
+```scala
+// defining a block for if-else
+val x = 10
+if (x > 5) {
+  println("x is greater than 5")
+} else {
+  println("x is 5 or less")
+}
+```
+
+### Loop Block:
+
+```scala
+// defining a block for a loop
+for (i <- 1 to 5) {
+  println(s"Number $i")
+}
+```
+
+### Standalone Block:
+
+```scala
+// a standalone block
+val result = {
+  val a = 10
+  val b = 5
+  a + b
+}
+println(s"Result: $result")
+```
+
+In each case, the curly braces {} contain a block of code, and the expressions inside are executed in sequence. 
+
+It's important to note that the last expression in the block is the value of the block. In the fourth example, the value of the block is a + b, which is assigned to the result variable.
+
 ## 15. Operators
 
 ## 16. Conditions. IF command
