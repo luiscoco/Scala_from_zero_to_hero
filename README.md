@@ -222,7 +222,7 @@ https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&co
 
 ## 7.How to create a Scala project in IntelliJ
 
-
+https://docs.scala-lang.org/getting-started/intellij-track/getting-started-with-scala-in-intellij.html
 
 ## 8. Introduction to REPL. Command tools
 
