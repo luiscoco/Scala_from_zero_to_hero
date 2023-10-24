@@ -231,7 +231,6 @@ Short: 16-bit signed integer.
 Byte: 8-bit signed integer.
 
 ```scala
-Copy code
 val x: Int = 42
 val y: Long = 123456789L
 ```
@@ -243,7 +242,6 @@ Float: 32-bit single-precision floating point.
 Double: 64-bit double-precision floating point.
 
 ```scala
-Copy code
 val a: Float = 2.5f
 val b: Double = 3.14
 ```
@@ -255,7 +253,6 @@ Char: 16-bit Unicode character.
 String: A sequence of characters.
 
 ```scala
-Copy code
 val char: Char = 'A'
 val str: String = "Hello, Scala!"
 ```
@@ -274,7 +271,6 @@ val isScalaAwesome: Boolean = true
 A grouping of values of different types.
 
 ```scala
-Copy code
 val tuple: (Int, String, Double) = (1, "Scala", 3.14)
 ```
 
@@ -282,9 +278,9 @@ val tuple: (Int, String, Double) = (1, "Scala", 3.14)
 
 A mutable sequence of elements of the same type.
 
-scala
-Copy code
+```scala
 val array: Array[Int] = Array(1, 2, 3, 4, 5)
+```
 
 **Lists:**
 
@@ -314,33 +310,33 @@ These are just the basics. Scala also supports more advanced types, and it has a
 
 ## 10. Var y Val. Variables.
 
-11. Crear variable en modo Lazy.
+## 11. Crear variable en modo Lazy.
 
-12. Prácticas variables y constantes.
+## 12. Prácticas variables y constantes.
 
-13. Comentarios.
+## 13. Comentarios.
 
-14. Bloques.
+## 14. Bloques.
 
-15. Operadores.
+## 15. Operadores.
 
-16. Condiciones. Comando IF.
+## 16. Condiciones. Comando IF.
 
-17. Bucles.
+## 17. Bucles.
 
-18. Rangos.
+## 18. Rangos.
 
-19. Inicializar variables por defecto.
+## 19. Inicializar variables por defecto.
 
-20. Pattern Matching parte 1.
+## 20. Pattern Matching parte 1.
 
-21. Pattern Matching parte 2.
+## 21. Pattern Matching parte 2.
 
-22. Trabajar con Números.
+## 22. Trabajar con Números.
 
-23. Introducción a las colecciones.
+## 23. Introducción a las colecciones.
 
-24. List.
+## 24. List.
 
 25. Operaciones con List.
 
