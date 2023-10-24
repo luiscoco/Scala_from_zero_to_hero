@@ -1556,33 +1556,40 @@ That's a quick overview! Classes in Scala offer a powerful way to structure your
 
 Scala, being a versatile language, offers several advanced features related to classes and object-oriented programming. Let's dive into a few more advanced topics:
 
-Companion Objects:
+### Companion Objects:
 
 In Scala, a companion object is an object with the same name as a class.
+
 It is often used for defining factory methods or other methods that are not specific to instances of the class.
-scala
-Copy code
+
+```scala
 class MyClass(value: Int)
 
 object MyClass {
   def createInstance(value: Int): MyClass = new MyClass(value)
 }
-Case Classes (Deeper):
+```
+
+### Case Classes (Deeper):
 
 Case classes not only provide convenience methods but also automatically generate a companion object with apply methods for easy instantiation.
-scala
-Copy code
+
+```scala
 case class Person(name: String, age: Int)
 val person = Person("John", 25)  // Automatically calls apply method in the companion object
+```
+
 Case classes also generate copy methods for easy creation of modified copies.
-scala
-Copy code
+
+```scala
 val olderPerson = person.copy(age = 30)
-Sealed Classes and Pattern Matching:
+```
+
+### Sealed Classes and Pattern Matching:
 
 A sealed class can only be extended in the same file. This allows exhaustive pattern matching.
-scala
-Copy code
+
+```scala
 sealed abstract class Result
 case class Success(message: String) extends Result
 case class Failure(reason: String) extends Result
@@ -1591,11 +1598,13 @@ def processResult(result: Result): Unit = result match {
   case Success(msg) => println(s"Success: $msg")
   case Failure(reason) => println(s"Failure: $reason")
 }
-Type Parameterization (Generics):
+```
+
+### Type Parameterization (Generics):
 
 You can parameterize classes with types, making them generic.
-scala
-Copy code
+
+```scala
 class Box[A](value: A)
 
 val intBox = new Box(42)
@@ -1614,7 +1623,8 @@ trait Logger {
 trait UserService {
   this: Logger =>
   def getUser(id: String): Unit = {
-    log(s"Getting user with id $id")
+    log(s"Getting user with id $id
+    
   }
 }
 ```
