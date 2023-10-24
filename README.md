@@ -592,6 +592,67 @@ numbers.foreach { num =>
 
 ## 18. Ranges
 
+In Scala, a range is an ordered sequence of numbers. 
+
+You can create ranges using the to and until methods. 
+
+The to method creates an inclusive range, while the until method creates a range that excludes the upper bound.
+
+### Inclusive Range (to):
+
+```scala
+val inclusiveRange = 1 to 5
+// Result: Range(1, 2, 3, 4, 5)
+```
+
+This creates a range from 1 to 5 (inclusive).
+
+### Exclusive Range (until):
+
+```scala
+val exclusiveRange = 1 until 5
+// Result: Range(1, 2, 3, 4)
+```
+
+This creates a range from 1 to 4 (excluding 5).
+
+### Specifying a Step:
+
+```scala
+val steppedRange = 1 to 10 by 2
+// Result: Range(1, 3, 5, 7, 9)
+```
+
+Here, the by method is used to specify the step, so the range goes up by 2.
+
+### Creating a Range of Characters:
+
+```scala
+val charRange = 'a' to 'z'
+// Result: NumericRange(a, b, c, ..., z)
+```
+
+Ranges aren't limited to numbers; you can create ranges of characters as well.
+
+### Using Range in a Loop:
+
+```scala
+for (i <- 1 to 3) {
+  println(s"Value of i: $i")
+}
+```
+
+```
+// Output:
+// Value of i: 1
+// Value of i: 2
+// Value of i: 3
+```
+
+Ranges are often used in for loops to iterate over a sequence of values.
+
+Ranges in Scala are quite versatile and can be used in various situations where you need a sequence of ordered values.
+
 ## 19. Default variables initialization
 
 ## 20. Pattern Matching part 1
