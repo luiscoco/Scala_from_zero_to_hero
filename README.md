@@ -214,11 +214,105 @@ https://www.scala-lang.org/download/
 
 ## 7. Ejemplo. Crear un proyecto de IntelliJ.
 
-8. Introducción a REPL. Herramienta en modo comando.
+## 8. Introducción a REPL. Herramienta en modo comando.
 
-9. Tipos de Datos.
+## 9. Tipos de Datos.
 
-10. Var y Val. Variables.
+Scala is a statically-typed language, which means that the type of a variable is known at compile time. Here are some basic data types in Scala:
+
+**Integers:**
+
+Int: 32-bit signed integer.
+
+Long: 64-bit signed integer.
+
+Short: 16-bit signed integer.
+
+Byte: 8-bit signed integer.
+
+```scala
+Copy code
+val x: Int = 42
+val y: Long = 123456789L
+```
+
+**Floating Point Numbers:**
+
+Float: 32-bit single-precision floating point.
+
+Double: 64-bit double-precision floating point.
+
+```scala
+Copy code
+val a: Float = 2.5f
+val b: Double = 3.14
+```
+
+**Characters and Strings:**
+
+Char: 16-bit Unicode character.
+
+String: A sequence of characters.
+
+```scala
+Copy code
+val char: Char = 'A'
+val str: String = "Hello, Scala!"
+```
+
+**Boolean:**
+
+Boolean: Represents true or false.
+
+```scala
+Copy code
+val isScalaAwesome: Boolean = true
+```
+
+**Tuples:**
+
+A grouping of values of different types.
+
+```scala
+Copy code
+val tuple: (Int, String, Double) = (1, "Scala", 3.14)
+```
+
+**Arrays:**
+
+A mutable sequence of elements of the same type.
+
+scala
+Copy code
+val array: Array[Int] = Array(1, 2, 3, 4, 5)
+
+**Lists:**
+
+An immutable linked list.
+
+```scala
+val list: List[Int] = List(1, 2, 3, 4, 5)
+```
+
+**Maps:**
+
+A collection of key-value pairs.
+
+```scala
+val map: Map[String, Int] = Map("one" -> 1, "two" -> 2, "three" -> 3)
+```
+
+**Option:**
+
+Represents a value that may or may not be present.
+
+```scala
+val maybeValue: Option[Int] = Some(42)
+```
+
+These are just the basics. Scala also supports more advanced types, and it has a strong type inference system, allowing you to omit types in many cases where the compiler can infer them.
+
+## 10. Var y Val. Variables.
 
 11. Crear variable en modo Lazy.
 
