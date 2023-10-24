@@ -768,8 +768,58 @@ val isNotEqual: Boolean = x == y  // false
 
 It's generally recommended to use == for equality comparisons.
 
-
 ## 16. Conditions. IF command
+
+In Scala, the if statement is used for conditional commands. It allows you to execute a block of code if a certain condition is true. 
+
+The basic syntax looks like this:
+
+```scala
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+```
+
+Here's a simple example:
+
+```scala
+val x = 10
+
+if (x > 5) {
+  println("x is greater than 5")
+} else {
+  println("x is not greater than 5")
+}
+```
+
+In this example, if the value of x is greater than 5, it will print "x is greater than 5"; otherwise, it will print "x is not greater than 5."
+
+You can also use the else if clause to check multiple conditions:
+
+```scala
+val y = 7
+
+if (y > 10) {
+  println("y is greater than 10")
+} else if (y > 5) {
+  println("y is greater than 5 but not greater than 10")
+} else {
+  println("y is 5 or less")
+}
+```
+
+This structure allows you to check a series of conditions, and the first one that is true will execute its corresponding block of code.
+
+Additionally, you can use the val result = if (condition) expr1 else expr2 syntax for assigning values based on a condition:
+
+```scala
+val result = if (x > 5) "x is greater than 5" else "x is not greater than 5"
+println(result)
+```
+
+In this case, the result variable will hold the string based on whether the condition is true or false.
 
 ## 17. Loops
 
