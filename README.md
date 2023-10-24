@@ -6,19 +6,86 @@ https://github.com/vadopolski?page=2&tab=repositories
 
 https://www.scala-sbt.org/download.html
 
-1. Introducción al lenguaje Scala.
+## Introducción al lenguaje Scala.
 
-2. Diferencias básicas con Java.
+Scala is a powerful programming language that seamlessly combines object-oriented and functional programming paradigms. Here's a brief introduction:
 
-3. Un recorrido por la página web de Scala.
+### Origin:
 
-4. Tipos de descarga del software de Scala.
+Scala, short for "scalable language," was created by Martin Odersky and first released in 2003.
 
-5. Instalación manual.
+It was designed to be concise, elegant, and to address some limitations of Java.
 
-6. Instalación de IntelliJ Idea (Commnunity version).
+### Object-Oriented and Functional:
 
-7. Ejemplo. Crear un proyecto de IntelliJ.
+Scala is a pure object-oriented language in the sense that every value is an object.
+
+It also incorporates functional programming concepts, allowing developers to write clean and modular code.
+
+### Conciseness:
+
+One of Scala's strengths is its conciseness. It reduces boilerplate code, making it more expressive and readable. 
+
+It's often praised for striking a good balance between brevity and clarity.
+
+### Type System:
+
+Scala has a strong, static type system, which helps catch errors at compile-time rather than runtime. 
+
+It also features type inference, allowing developers to omit certain type annotations.
+
+### Interoperability:
+
+Scala is designed to be fully interoperable with Java. This means you can use Java libraries seamlessly in Scala code, and vice versa. Existing Java codebases can gradually adopt Scala.
+
+### Immutability:
+
+Immutability is encouraged in Scala, contributing to a functional programming style. 
+
+Immutable data structures and immutability by default are key principles in functional programming that Scala embraces.
+
+### Pattern Matching:
+
+Scala includes powerful pattern matching capabilities, which simplifies complex conditional statements and enhances code clarity.
+
+### Concurrency:
+
+Scala supports actor-based concurrency model, inspired by Erlang. 
+
+This makes it well-suited for developing concurrent and distributed systems.
+
+### Scalability:
+
+Scala is designed to be scalable, not just in terms of codebase size but also in supporting parallel and distributed computing.
+
+It can be used for small scripts as well as large systems.
+
+### Tooling:
+
+Scala has a rich set of development tools, including an interactive shell (REPL), build tools like sbt, and support in popular IDEs like IntelliJ IDEA and Eclipse.
+
+In summary, Scala is a versatile language that brings together the best of both object-oriented and functional programming worlds. 
+
+Its interoperability with Java and focus on conciseness make it a compelling choice for a wide range of applications.
+
+## 2. Diferencias básicas con Java.
+
+
+
+## 3. Un recorrido por la página web de Scala.
+
+
+## 4. Tipos de descarga del software de Scala.
+
+
+## 5. Instalación manual.
+
+
+## 6. Instalación de IntelliJ Idea (Commnunity version).
+
+
+
+## 7. Ejemplo. Crear un proyecto de IntelliJ.
 
 8. Introducción a REPL. Herramienta en modo comando.
 
