@@ -1449,7 +1449,7 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 
 
-## 40. Crear una aplicación con el método "main".
+## 40. Create an application including the "main" method
 
 
 
@@ -1459,70 +1459,70 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 
 
-## 42. Clases Parte 1.
+## 42. Clases Part 1
 
 
 
-## 43. Clases Parte 2.
+## 43. Clases Part 2
 
 
 
-## 44. Herencia.
+## 44. Inheritance
 
 
 
-## 45. Traits Parte 1.
+## 45. Traits Part 1
 
 
 
-## 46. Traits Parte 2.
+## 46. Traits Part 2
 
 
 
-## 47. Traits Múltiples.
+## 47. Multiple Traits
 
 
 
-## 48. Modificadores de acceso: private, public, protected.
+## 48. Access modifiers: private, public, protected.
 
 
 
-## 49. Constructores.
-
-
-
-
-## 50. Constructores auxiliares.
+## 49. Constructors
 
 
 
 
-## 51. Constructores múltiples.
+## 50. Auxiliary constructors
 
 
 
 
-## 52. Singleton Objects.
+## 51. Multiple constructors
 
 
 
 
-## 53. Companion Objects.
+## 52. Singleton Objects
 
 
 
 
-## 54. Crear Instancias son NEW.
+## 53. Companion Objects
 
 
 
 
-## 55. Case Class.
+## 54. Create instances with new
 
 
 
 
-## 56. Clases Abstractas.
+## 55. Case class
+
+
+
+
+## 56. Abstract class
 
 
 
@@ -1530,60 +1530,60 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 # Programación funcional.
 
-## 57. High Order Functrions.
+## 57. High Order Functrions
 
 
 
-## 58. Funciones anónimas. Functions literals.
+## 58. Anonymous functions. Functions literals
 
 
 
-## 59. Funciones con parámetros.
+## 59. Functions with parameters
 
 
 
-## 60. Funciones como variable.
+## 60. Functions as variables
 
 
 
-## 61. Devolver una función.
+## 61. Return a function
 
 
 
-## 62. Partially Applied Functions.
+## 62. Partially Applied Functions
 
 
 
-## 63. Currying Functions.
+## 63. Currying Functions
 
 
 
-## 64. Closures.
+## 64. Closures
 
 
 
-## 65. Options.
+## 65. Options
 
 
 
-## 66. Exceptions. Try Catch.
+## 66. Exceptions. Try Catch
 
 
 
-## 67. Exceptions, finally.
+## 67. Exceptions, finally
 
 
 
-## 68. Exceptions, Throw.
+## 68. Exceptions, Throw
 
 
 
-## 69. Sobrecarga. Overloading.
+## 69. Overloading
 
 
 
-## 70. Leer ficheros de texto.
+## 70. Text files
 
 
 
-## 71. Escribir y leer ficheros binarios.
+## 71. Binary files
