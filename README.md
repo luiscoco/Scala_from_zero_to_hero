@@ -738,6 +738,88 @@ Default values make your code more robust by ensuring that variables have meanin
 
 ## 20. Pattern Matching part 1
 
+ In Scala, pattern matching is a powerful feature that allows you to match complex data structures and perform different actions based on the structure of the data. 
+ 
+ It's often used as a more powerful and readable alternative to traditional switch statements.
+
+### Example 1: Matching on Values
+
+```scala
+def describe(x: Any): String = x match {
+  case 1 => "One"
+  case "hello" => "Greeting"
+  case true => "True"
+  case _ => "Something else"
+}
+
+val result = describe("hello")
+println(result)  // Output: Greeting
+```
+
+In this example, the describe function takes any input (x) and matches it against different cases.
+
+If x is equal to 1, it returns "One."
+
+If it's equal to "hello," it returns "Greeting."
+
+If it's true, it returns "True."
+
+If none of these cases match, it returns "Something else."
+
+### Example 2: Matching on Types
+
+```scala
+def process(x: Any): String = x match {
+  case i: Int => s"Received an integer: $i"
+  case s: String => s"Received a string: $s"
+  case _ => "Unknown type"
+}
+
+val result1 = process(42)
+val result2 = process("Scala")
+
+println(result1)  // Output: Received an integer: 42
+println(result2)  // Output: Received a string: Scala
+```
+
+Here, the process function matches based on the type of the input. 
+
+If it's an Int, it prints a message with the integer value. 
+
+If it's a String, it prints a message with the string value. 
+
+If it doesn't match any of these cases, it prints "Unknown type."
+
+### Example 3: Matching on Case Classes
+
+```scala
+case class Person(name: String, age: Int)
+
+def greet(person: Person): String = person match {
+  case Person("Alice", 25) => "Hi Alice!"
+  case Person("Bob", 30) => "Hello Bob!"
+  case Person(name, age) => s"Nice to meet you, $name (age $age)!"
+}
+
+val alice = Person("Alice", 25)
+val bob = Person("Bob", 30)
+val unknown = Person("Unknown", 40)
+
+println(greet(alice))    // Output: Hi Alice!
+println(greet(bob))      // Output: Hello Bob!
+println(greet(unknown))  // Output: Nice to meet you, Unknown (age 40)!
+```
+
+In this example, the greet function matches on instances of the Person case class. 
+
+It checks if the person is Alice or Bob and responds accordingly. 
+
+If it's neither Alice nor Bob, it provides a generic greeting.
+
+These are just a few examples of pattern matching in Scala. 
+
+It's a versatile feature that can be used in various contexts, making your code more expressive and concise.
+
 ## 21. Pattern Matching part 2
 
 ## 22. Numbers
