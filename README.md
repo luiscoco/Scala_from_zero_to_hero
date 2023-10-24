@@ -1584,6 +1584,114 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 ## 70. Text files
 
+In Scala, working with text files involves reading from and writing to files. 
+
+Scala provides several ways to perform these operations. 
+
+### Reading from a Text File
+
+You can use the Source class in the scala.io package to read from a text file. Here's a simple example:
+
+```scala
+import scala.io.Source
+
+// Specify the path to your text file
+val filePath = "path/to/your/file.txt"
+
+// Try to open the file and read its contents
+try {
+  val source = Source.fromFile(filePath)
+  val lines = source.getLines().toList
+
+  // Do something with the lines (e.g., print them)
+  lines.foreach(println)
+
+  // Close the source to release resources
+  source.close()
+} catch {
+  case e: Exception => println(s"An error occurred: ${e.getMessage}")
+}
+```
+
+### Writing to a Text File
+
+To write to a text file, you can use java.io.PrintWriter or other similar classes. Here's an example:
+
+```scala
+import java.io.PrintWriter
+
+// Specify the path to your output file
+val outputPath = "path/to/your/output.txt"
+
+// Try to open the file for writing
+try {
+  val writer = new PrintWriter(outputPath)
+
+  // Write some lines to the file
+  writer.println("Hello, Scala!")
+  writer.println("This is a sample text file.")
+  writer.println("Writing to files in Scala is fun!")
+
+  // Close the writer to flush and release resources
+  writer.close()
+
+  println("Write operation successful.")
+} catch {
+  case e: Exception => println(s"An error occurred: ${e.getMessage}")
+}
+```
+
+Creating and deleting text files in Scala involves using Java's File class. Here are examples for both operations:
+
+### Creating a Text File
+
+```scala
+import java.io.PrintWriter
+
+// Specify the path for the new file
+val filePath = "path/to/your/newfile.txt"
+
+// Try to create the file
+try {
+  val writer = new PrintWriter(filePath)
+
+  // Write some content to the file
+  writer.println("This is a new text file created in Scala.")
+  writer.println("You can add more content here.")
+
+  // Close the writer to flush and release resources
+  writer.close()
+
+  println(s"File created successfully at: $filePath")
+} catch {
+  case e: Exception => println(s"An error occurred: ${e.getMessage}")
+}
+```
+
+### Deleting a Text File
+
+```scala
+import java.io.File
+
+// Specify the path to the file to be deleted
+val filePathToDelete = "path/to/your/file-to-delete.txt"
+
+// Create a File object
+val fileToDelete = new File(filePathToDelete)
+
+// Try to delete the file
+try {
+  if (fileToDelete.delete()) {
+    println(s"File deleted successfully: $filePathToDelete")
+  } else {
+    println(s"Unable to delete the file: $filePathToDelete")
+  }
+} catch {
+  case e: Exception => println(s"An error occurred: ${e.getMessage}")
+}
+```
+
+Make sure to replace the file paths with the actual paths you want to use. Also, handle exceptions appropriately in your actual code for robust error management.
 
 
 ## 71. Binary files
