@@ -68,6 +68,57 @@ In summary, Scala is a versatile language that brings together the best of both 
 
 Its interoperability with Java and focus on conciseness make it a compelling choice for a wide range of applications.
 
+### First Scala sample
+
+Let's create a simple example that incorporates some of Scala's features. 
+
+We'll create a program that calculates the factorial of a number using recursion, immutability, pattern matching, and type inference.
+
+```scala
+// Object-Oriented and Functional: Define a class with a companion object
+class FactorialCalculator {
+  // Immutable data: Use val for immutable variables
+  def factorial(n: Int): Int = {
+    if (n <= 0) 1
+    else n * factorial(n - 1)
+  }
+}
+
+// Companion object for the class with a main method
+object FactorialCalculator {
+  // Type inference: Scala infers the return type of the method
+  def main(args: Array[String]): Unit = {
+    // Immutable data: Use val for immutable variables
+    val number = 5
+
+    // Pattern matching: Match on the result of factorial calculation
+    val result = number match {
+      case 0 => 1
+      case _ => new FactorialCalculator().factorial(number)
+    }
+
+    // Output the result
+    println(s"The factorial of $number is $result")
+  }
+}
+```
+
+In this example:
+
+Object-Oriented and Functional: We define a class FactorialCalculator to encapsulate the logic for calculating factorial.
+
+Immutable Data: We use val for immutable variables, like number.
+
+Type Inference: The return type of the factorial method is not explicitly declared; Scala infers it.
+
+Pattern Matching: We use pattern matching in the match block to handle different cases, including the base case where the number is 0.
+
+Interoperability: Although we didn't explicitly use Java libraries in this example, Scala can easily interoperate with Java libraries.
+
+Scalability: This example is simple, but Scala's features make it suitable for building larger and more complex systems.
+
+Feel free to run this Scala code in an environment that supports Scala, and you should see the factorial of 5 printed to the console.
+
 ## 2. Diferencias básicas con Java.
 
 
