@@ -530,6 +530,46 @@ val origin = Point(0, 0)
 
 ## 13. Comments
 
+In Scala, comments are used to add explanatory notes or annotations to the code. 
+
+There are two types of comments in Scala: single-line comments and multi-line comments.
+
+### Single-line comments:
+
+Single-line comments start with // and continue until the end of the line. Anything following // on that line is treated as a comment and is ignored by the Scala compiler.
+
+```scala
+// This is a single-line comment
+val x = 42  // You can also add a comment at the end of a line of code
+```
+
+### Multi-line comments:
+
+Multi-line comments begin with /* and end with */. Everything between these delimiters is treated as a comment.
+
+```scala
+/*
+This is a
+multi-line comment
+*/
+val y = 10
+```
+
+Here's an example that combines both types of comments:
+
+```scala
+// This is a single-line comment
+
+/*
+  This is a multi-line comment
+  spanning multiple lines
+*/
+
+val z = 3 // Another single-line comment
+```
+
+Comments are useful for documenting your code, providing explanations for complex logic, or temporarily disabling code for testing purposes.
+
 ## 14. Blocks
 
 ## 15. Operators
