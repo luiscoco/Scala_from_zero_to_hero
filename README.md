@@ -1461,7 +1461,96 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 ## 42. Clases Part 1
 
+In Scala, classes are a fundamental building block of object-oriented programming.
 
+They serve as blueprints for creating objects, which are instances of those classes. Here's a brief overview:
+
+### Class Definition:
+
+```scala
+class MyClass {
+  // class body
+}
+```
+
+### Constructor:
+
+You can have a primary constructor in the class definition itself.
+
+Parameters of the primary constructor are used to initialize the class fields.
+
+```scala
+class Person(name: String, age: Int) {
+  // class body
+}
+```
+
+### Fields:
+
+Fields are variables that hold data for each object created from the class.
+
+In Scala, fields are automatically created from the parameters of the primary constructor.
+
+```scala
+class Person(name: String, age: Int) {
+  val personName: String = name
+  var personAge: Int = age
+}
+```
+
+### Methods:
+
+Methods are functions defined within the class.
+
+They can operate on the class fields and perform various tasks.
+
+```scala
+class Person(name: String, age: Int) {
+  def sayHello(): Unit = {
+    println(s"Hello, my name is $name and I'm $age years old.")
+  }
+}
+```
+
+### Object Instantiation:
+
+You create objects from classes using the new keyword.
+
+```scala
+val person = new Person("John", 25)
+```
+
+### Inheritance:
+
+Scala supports single-class inheritance using the extends keyword.
+
+```scala
+class Student(name: String, age: Int, studentId: String) extends Person(name, age) {
+  // additional fields and methods for Student
+}
+```
+
+###  Overriding Methods:
+
+You can override methods from a parent class in a child class using the override keyword.
+
+```scala
+override def sayHello(): Unit = {
+  println(s"Hello, I'm a student named $name.")
+}
+```
+
+### Case Classes:
+
+Scala has a special kind of class called a case class, which is often used for immutable data.
+
+```scala
+case class Point(x: Int, y: Int)
+```
+
+Case classes automatically provide methods like equals, toString, and hashCode.
+
+That's a quick overview! Classes in Scala offer a powerful way to structure your code in an object-oriented manner.
 
 ## 43. Clases Part 2
 
