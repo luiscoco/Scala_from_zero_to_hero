@@ -310,6 +310,60 @@ These are just the basics. Scala also supports more advanced types, and it has a
 
 ## 10. Var y Val. Variables.
 
+In Scala, val and var are used to declare variables, but they have different characteristics:
+
+### val (Immutable Variable):
+
+Once a val is assigned, its value cannot be changed. It's similar to declaring a constant.
+
+```scala
+Copy code
+val pi: Double = 3.14
+val greeting: String = "Hello, Scala!"
+
+// Attempting to reassign will result in a compilation error:
+// pi = 3.14159  // Compilation error
+The values assigned to val are immutable.
+```
+
+### var (Mutable Variable):
+
+A var can have its value reassigned. It's a mutable variable.
+
+```scala
+Copy code
+var counter: Int = 0
+
+// Value can be changed:
+counter = 1
+```
+
+While using var provides mutability, it's generally considered good practice to use val whenever possible to make your code more robust and functional.
+
+Here's a simple example using both val and var:
+
+```scala
+// Immutable variable
+val fixedValue: String = "I won't change"
+
+// Mutable variable
+var changingValue: Int = 42
+
+// Let's do some changes
+changingValue = 100
+
+// The following line will result in a compilation error
+// fixedValue = "Oops, I tried to change"
+
+// Output the values
+println(fixedValue)
+println(changingValue)
+```
+
+In this example, fixedValue cannot be reassigned, while changingValue can be modified. 
+
+It's a good practice to use val by default and only use var when necessary for specific scenarios where mutability is required.
+
 ## 11. Crear variable en modo Lazy.
 
 ## 12. Prácticas variables y constantes.
