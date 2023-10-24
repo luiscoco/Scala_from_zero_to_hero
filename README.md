@@ -208,11 +208,15 @@ https://www.scala-lang.org/download/
 
 ## 5. Scala installation
 
+
+
 ## 6. IntelliJ installation (Commnunity edition)
 
 
 
 ## 7.How to create a Scala project in IntelliJ
+
+
 
 ## 8. Introduction to REPL. Command tools
 
@@ -220,22 +224,24 @@ Let's delve into Scala's **REPL (Read-Eval-Print Loop)** and command-line tools.
 
 REPL (Read-Eval-Print Loop): Scala's REPL is an interactive shell that allows you to execute Scala code one line at a time:
 
-Read: The REPL reads your input line by line.
+**Read:** The REPL reads your input line by line.
 
-Eval: It evaluates the expression you entered.
+**Eval:** It evaluates the expression you entered.
 
-Print: It prints the result of the evaluation.
+**Print:** It prints the result of the evaluation.
 
-Loop: The process repeats, creating an interactive and iterative development environment.
+**Loop:** The process repeats, creating an interactive and iterative development environment.
 
-To start the REPL, open your terminal and type scala. You'll enter an interactive session where you can directly write and execute Scala code.
+To start the REPL, open your terminal and type scala. 
+
+You'll enter an interactive session where you can directly write and execute Scala code.
 
 ```
 scala> val x = 10
 x: Int = 10
 ```
 
-``
+```
 scala> println(x * 2)
 20
 ```
