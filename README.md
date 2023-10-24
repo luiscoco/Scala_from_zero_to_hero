@@ -1782,7 +1782,62 @@ They're concise and often used with higher-order functions like map, filter, and
 
 ## Functions literals
 
+In Scala, function literals are anonymous functions that you can define on the fly. 
 
+They are also known as anonymous functions or lambda functions. 
+
+The syntax for function literals is concise and expressive.
+
+Here's a simple explanation with examples:
+
+Basic Syntax:
+
+(parameters) => expression
+
+### Example 1: Simple Addition
+
+```scala
+val add = (a: Int, b: Int) => a + b
+println(add(2, 3)) // Output: 5
+```
+
+In this example, add is a function literal that takes two parameters a and b and returns their sum.
+
+### Example 2: Multi-line Expression
+
+```scala
+val multiply = (a: Int, b: Int) => {
+  val result = a * b
+  result
+}
+println(multiply(2, 3)) // Output: 6
+```
+
+You can use curly braces for a multi-line expression. The last line of the block is the return value.
+
+### Example 3: Function as a Parameter
+
+```scala
+def operate(x: Int, y: Int, operation: (Int, Int) => Int): Int = {
+  operation(x, y)
+}
+
+val result = operate(3, 4, (a, b) => a * b)
+println(result) // Output: 12
+```
+
+Here, the operate function takes two numbers and a function as parameters. The third parameter is a function literal for the operation.
+
+Using Underscore _:
+
+```scala
+val square: Int => Int = _ * _
+println(square(5)) // Output: 25
+```
+
+The underscore is a shorthand notation for parameters. In this example, _ * _ is a concise way to express a function that squares its input.
+
+Function literals in Scala are powerful and provide a concise way to express functionality, especially when you need to pass functions as parameters or return them from other functions.
 
 ## 59. Functions with parameters
 
