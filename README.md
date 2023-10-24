@@ -123,37 +123,37 @@ Feel free to run this Scala code in an environment that supports Scala, and you 
 
 Here are some basic differences between Scala and Java:
 
-***Paradigm:***
+**Paradigm:**
 
 Java: Primarily an object-oriented programming language with support for procedural programming.
 
 Scala: Combines object-oriented and functional programming paradigms.
 
-***Type System:***
+**Type System:**
 
 Java: Has a more verbose type system. Requires explicit type annotations in many cases.
 
 Scala: Employs a more concise and expressive type system. Type inference reduces the need for explicit type annotations.
 
-***Syntax:***
+**Syntax:**
 
 Java: Generally more verbose syntax.
 
 Scala: Emphasizes conciseness and expressive syntax. Less boilerplate code.
 
-***Immutability:***
+**Immutability:**
 
 Java: Immutability needs to be explicitly enforced, and Java has mutable and immutable classes.
 
 Scala: Favors immutability by default. Immutable data structures are encouraged.
 
-***Null Handling:***
+**Null Handling:**
 
 Java: Null is a valid value for any reference type, leading to the possibility of NullPointerExceptions.
 
 Scala: Introduces the Option type to handle nullability more safely. Null references are less common.
 
-***Concurrency:***
+**Concurrency:**
 
 Java: Primarily relies on thread-based concurrency using classes like Thread and Runnable. 
 
@@ -163,25 +163,25 @@ Scala: Utilizes the Actor model for concurrency.
 
 Actors are lightweight, and immutability helps in writing concurrent and parallel code.
 
-***Pattern Matching:***
+**Pattern Matching:**
 
 Java: Traditional switch statements are limited and cannot match complex patterns.
 
 Scala: Employs powerful pattern matching constructs for expressive and concise code.
 
-***Interoperability:***
+**Interoperability:**
 
 Java: Designed to be highly interoperable with other Java code. Can easily use Java libraries.
 
 Scala: Fully interoperable with Java. Scala code can call Java methods and use Java libraries seamlessly.
 
-***Tooling:***
+**Tooling:**
 
 Java: Mature ecosystem with robust IDE support (Eclipse, IntelliJ IDEA, etc.) and build tools (Maven, Gradle).
 
 Scala: Good IDE support (IntelliJ IDEA, Eclipse with Scala IDE) and build tools like sbt.
 
-***Learning Curve:***
+**Learning Curve:**
 
 Java: Generally considered more straightforward for beginners due to its simpler syntax.
 
