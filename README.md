@@ -216,6 +216,69 @@ https://www.scala-lang.org/download/
 
 ## 8. Introduction to REPL. Command tools
 
+Let's delve into Scala's **REPL (Read-Eval-Print Loop)** and command-line tools.
+
+REPL (Read-Eval-Print Loop): Scala's REPL is an interactive shell that allows you to execute Scala code one line at a time:
+
+Read: The REPL reads your input line by line.
+
+Eval: It evaluates the expression you entered.
+
+Print: It prints the result of the evaluation.
+
+Loop: The process repeats, creating an interactive and iterative development environment.
+
+To start the REPL, open your terminal and type scala. You'll enter an interactive session where you can directly write and execute Scala code.
+
+```
+scala> val x = 10
+x: Int = 10
+```
+
+``
+scala> println(x * 2)
+20
+```
+
+You can use the REPL for quick experimentation, testing small code snippets, or exploring the language features.
+
+**Command-Line Tools:**
+
+Scala comes with several command-line tools that facilitate various tasks:
+
+**scalac:** The Scala compiler. It compiles Scala source code into Java bytecode.
+
+```bash
+# Compile a Scala file
+scalac MyFile.scala
+```
+
+**Run the compiled bytecode**
+scala MyFile
+
+**scaladoc:** Generates HTML documentation from Scala source code.
+
+```bash
+# Generate documentation
+scaladoc MyFile.scala
+```
+
+**scalap:** Decompiles Scala classes back to source code.
+
+```bash
+# Decompile a class file
+scalap MyFile.class
+```
+
+**sbt (Scala Build Tool):** While not a command-line tool bundled with Scala, sbt is commonly used for managing Scala projects, compiling, testing, and more.
+
+```bash
+# Run sbt in interactive mode
+sbt
+```
+
+These tools empower you to manage your Scala codebase efficiently, from compiling and testing to generating documentation.
+
 ## 9. Data types
 
 Scala is a statically-typed language, which means that the type of a variable is known at compile time. Here are some basic data types in Scala:
