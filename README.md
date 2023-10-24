@@ -400,6 +400,59 @@ This lazy evaluation can be beneficial in situations where you want to avoid unn
 
 ## 12. Variables and constants practices
 
+Scala is a powerful language that combines object-oriented and functional programming features. 
+
+Let's dive into some advanced practices for variables and constants in Scala:
+
+## Variables:
+
+## Mutable Variables (var):
+
+```scala
+var counter: Int = 10
+counter += 1
+```
+
+Type Inference:
+
+```scala
+var message = "Hello, Scala!" // Compiler infers the type
+```
+
+## Variable Scope:
+
+```scala
+def printCounter(): Unit = {
+  var innerCounter = 5
+  println(innerCounter)
+}
+```
+
+## Lazy Evaluation:
+
+```scala
+lazy val expensiveOperation: Int = {
+  // Some expensive computation
+  42
+}
+```
+
+## Constants:
+
+## Immutable Variables (val):
+
+```scala
+Copy code
+val pi: Double = 3.14
+```
+
+**Case Classes:**
+
+```scala
+case class Point(x: Int, y: Int)
+val origin = Point(0, 0)
+```
+
 ## 13. Comments
 
 ## 14. Blocks
