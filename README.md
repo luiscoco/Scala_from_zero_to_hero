@@ -661,6 +661,83 @@ Ranges in Scala are quite versatile and can be used in various situations where 
 
 ## 22. Numbers
 
+Scala is a versatile programming language that combines object-oriented and functional programming paradigms. 
+
+Let's dive into some basic concepts using examples with numbers in Scala.
+
+### Declaring Variables:
+
+In Scala, you can declare variables using val for immutable values (constants) and var for mutable variables.
+
+```scala
+val x: Int = 5 // Immutable variable
+var y: Double = 3.14 // Mutable variable
+```
+
+### Basic Arithmetic Operations:
+
+Scala supports standard arithmetic operations on numbers.
+
+```scala
+val sum = x + y
+val difference = x - y
+val product = x * y
+val quotient = x / y
+```
+
+### Data Types:
+
+Scala has various numeric data types, such as Int, Double, Float, Long, etc.
+
+```scala
+Copy code
+val intNumber: Int = 10
+val doubleNumber: Double = 3.5
+val floatNumber: Float = 2.0f
+val longNumber: Long = 1000000000L
+```
+
+### Type Inference:
+
+Scala has a powerful type inference system, so you don't always need to explicitly mention the data type.
+
+```scala
+val a = 10 // Scala infers that 'a' is of type Int
+val b = 3.5 // Scala infers that 'b' is of type Double
+```
+
+### Math Functions:
+
+Scala provides various math functions that you can use on numbers.
+
+```scala
+val absoluteValue = math.abs(-10)
+val squareRoot = math.sqrt(25)
+val power = math.pow(2, 3)
+```
+
+### Ranges:
+
+Scala has a convenient way to create ranges of numbers.
+
+```scala
+val range = 1 to 5 // Represents the range 1, 2, 3, 4, 5
+```
+
+### Collections:
+
+Scala has powerful collection types like Lists, Arrays, etc., which can store and manipulate sequences of numbers.
+
+```scala
+val numbersList = List(1, 2, 3, 4, 5)
+val squaredNumbers = numbersList.map(x => x * x)
+```
+
+These are just a few examples to give you a taste of working with numbers in Scala. 
+
+The language has a lot more features and capabilities, especially when it comes to functional programming constructs and concise syntax.
+
+
 ## 23. Collections
 
 The following figure shows all collections in package scala.collection. These are all high-level abstract classes or traits, which generally have mutable as well as immutable implementations.
