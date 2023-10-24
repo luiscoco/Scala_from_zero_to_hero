@@ -212,7 +212,13 @@ https://www.scala-lang.org/download/
 
 ## 6. IntelliJ installation (Commnunity edition)
 
+https://www.jetbrains.com/idea/
 
+https://www.jetbrains.com/idea/download/?section=windows
+
+https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
+
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/16dbcc15-a1bd-46f0-82d4-034d18819b8b)
 
 ## 7.How to create a Scala project in IntelliJ
 
