@@ -378,6 +378,64 @@ It's a good practice to use val by default and only use var when necessary for s
 
 ## 17. Loops
 
+In Scala, there are different ways to implement loops. Let me show you a couple of examples.
+
+### For Loop:
+
+The for loop in Scala is similar to loops in other languages. It iterates over a range of values or a collection.
+
+```scala
+// Example 1: Looping through a range of values
+for (i <- 1 to 5) {
+  println(s"Value of i: $i")
+}
+
+// Example 2: Looping through a collection
+val fruits = List("apple", "banana", "orange")
+for (fruit <- fruits) {
+  println(s"Current fruit: $fruit")
+}
+```
+
+### While Loop:
+
+Scala also supports the traditional while loop.
+
+```scala
+// Example: While loop
+var x = 0
+while (x < 5) {
+  println(s"Value of x: $x")
+  x += 1
+}
+```
+
+### Do-While Loop:
+
+The do-while loop ensures that the block of code is executed at least once before checking the condition.
+
+```scala
+// Example: Do-while loop
+var y = 0
+do {
+  println(s"Value of y: $y")
+  y += 1
+} while (y < 5)
+```
+
+### Functional Approach - For Each:
+
+Scala encourages a functional programming style, and you can often use higher-order functions like foreach to achieve looping behavior.
+
+```scala
+Copy code
+// Example: Using foreach with a collection
+val numbers = List(1, 2, 3, 4, 5)
+numbers.foreach { num =>
+  println(s"Current number: $num")
+}
+```
+
 ## 18. Ranges
 
 ## 19. Default variables initialization
