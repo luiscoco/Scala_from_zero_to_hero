@@ -364,67 +364,67 @@ In this example, fixedValue cannot be reassigned, while changingValue can be mod
 
 It's a good practice to use val by default and only use var when necessary for specific scenarios where mutability is required.
 
-## 11. Crear variable en modo Lazy.
+## 11. Create variable in lazy mode
 
-## 12. Prácticas variables y constantes.
+## 12. Variables and constants practices
 
-## 13. Comentarios.
+## 13. Comments
 
-## 14. Bloques.
+## 14. Blocks
 
-## 15. Operadores.
+## 15. Operators
 
-## 16. Condiciones. Comando IF.
+## 16. Conditions. IF command
 
-## 17. Bucles.
+## 17. Loops
 
-## 18. Rangos.
+## 18. Ranges
 
-## 19. Inicializar variables por defecto.
+## 19. Default variables initialization
 
-## 20. Pattern Matching parte 1.
+## 20. Pattern Matching part 1
 
-## 21. Pattern Matching parte 2.
+## 21. Pattern Matching part 2
 
-## 22. Trabajar con Números.
+## 22. Numbers
 
-## 23. Introducción a las colecciones.
+## 23. Collections
 
-## 24. List.
+## 24. List
 
-## 25. Operaciones con List.
+## 25. List operations
 
-## 26. Más operaciones con List.
+## 26. More operations with List
 
-## 27. ListBuffer.
+## 27. ListBuffer
 
-## 28. Array.
+## 28. Array
 
-## 29. ArrayBuffer.
+## 29. ArrayBuffer
 
-## 30. Set.
+## 30. Set
 
-## 31. Map.
+## 31. Map
 
-## 32. Funciones.
+## 32. Functions
 
-## 33. Procedimientos. Funciones que no devuelven valor.
+## 33. Procedures. Functions that do not return a value
 
-## 34. Funciones con parámetros.
+## 34. Functions with parameters
 
-## 35. Parámetros con nombre.
+## 35. Named parameters
 
-## 36. Parámetros por defecto.
+## 36. Default parameters
 
-## 37. Número variable de parámetros.
+## 37. Variable number of paramters
 
-## 38. Crear aplicaciones con IntelliJ IDEA.
+## 38. How to create an application with IntelliJ IDEA
 
-## 39. Mi primera aplicación Scala.
+## 39. My first application with Scala
 
 ## 40. Crear una aplicación con el método "main".
 
-## 41. Compilar con scalac.
+## 41. Compile with scalac
 
 ## 42. Clases Parte 1.
 
