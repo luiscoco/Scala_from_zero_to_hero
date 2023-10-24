@@ -822,6 +822,105 @@ It's a versatile feature that can be used in various contexts, making your code 
 
 ## 21. Pattern Matching part 2
 
+Let's delve into some more advanced concepts of pattern matching in Scala.
+
+### Example 4: Matching Lists
+
+Pattern matching can be applied to collections like Lists. Here's an example:
+
+```scala
+def listMatch(lst: List[Int]): String = lst match {
+  case Nil => "Empty list"
+  case head :: tail => s"Head: $head, Tail: $tail"
+}
+
+val myList = List(1, 2, 3, 4, 5)
+val emptyList = List.empty[Int]
+
+println(listMatch(myList))      // Output: Head: 1, Tail: List(2, 3, 4, 5)
+println(listMatch(emptyList))   // Output: Empty list
+```
+
+In this example, the listMatch function matches a list. 
+
+If it's an empty list (Nil), it returns "Empty list." 
+
+If it has at least one element, it deconstructs the list into the head and tail and prints them.
+
+### Example 5: Matching with Guards
+
+You can use guards to add conditions to your pattern matches:
+
+```scala
+def describe(x: Any): String = x match {
+  case i: Int if i > 0 => "Positive integer"
+  case i: Int if i < 0 => "Negative integer"
+  case s: String if s.length > 5 => "Long string"
+  case _ => "Other"
+}
+
+val result1 = describe(42)
+val result2 = describe(-10)
+val result3 = describe("Scala is awesome!")
+
+println(result1)  // Output: Positive integer
+println(result2)  // Output: Negative integer
+println(result3)  // Output: Long string
+```
+
+Here, the patterns are matched with additional conditions (if i > 0, if i < 0, if s.length > 5).
+
+It allows you to filter the matched cases based on specified conditions.
+
+### Example 6: Pattern Matching in for Comprehensions
+
+Pattern matching can also be used in for comprehensions for extracting values:
+
+```scala
+val listOfEithers: List[Either[String, Int]] = List(Right(42), Left("Error"), Right(99))
+
+val result = for {
+  Right(num) <- listOfEithers
+} yield num
+
+println(result)  // Output: List(42, 99)
+```
+
+Here, the for comprehension iterates over a list of Either values.
+
+The pattern Right(num) is used to extract values from Right instances, effectively filtering out Left instances.
+
+### Example 7: Sealed Traits and Pattern Matching
+
+Sealed traits are often used in combination with pattern matching. 
+
+A sealed trait can only be extended by classes in the same file, which allows exhaustive pattern matching:
+
+```scala
+sealed trait Shape
+case class Circle(radius: Double) extends Shape
+case class Rectangle(width: Double, height: Double) extends Shape
+case object UnknownShape extends Shape
+
+def area(shape: Shape): Double = shape match {
+  case Circle(r) => math.Pi * r * r
+  case Rectangle(w, h) => w * h
+  case UnknownShape => 0.0
+}
+
+val circle = Circle(5.0)
+val rectangle = Rectangle(3.0, 4.0)
+val unknown = UnknownShape
+
+println(area(circle))      // Output: 78.53981633974483
+println(area(rectangle))   // Output: 12.0
+println(area(unknown))     // Output: 0.0
+```
+
+Here, the Shape trait is sealed, and we have two case classes (Circle and Rectangle) and an object (UnknownShape) extending it. 
+
+The area function uses pattern matching to calculate the area based on the shape.
+
 ## 22. Numbers
 
 Scala is a versatile programming language that combines object-oriented and functional programming paradigms. 
