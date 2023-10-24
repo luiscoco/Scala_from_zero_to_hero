@@ -1059,13 +1059,78 @@ The following figure shows all collections in package scala.collection. These ar
 
 ![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/ebf7b100-f86f-43c6-9875-1a69bc6374b3)
 
+### Inmutable collections
+
 The following figure shows all collections in package scala.collection.immutable.
 
 ![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/19c430d3-f3f6-46cf-a9c5-c0abe910bf7f)
 
+In Scala, immutable collections are collections whose elements and size cannot be changed after they are created. 
+
+Here are some examples of immutable collections in Scala:
+
+#### List:
+
+```scala
+// Creating an immutable list
+val immutableList = List(1, 2, 3)
+
+// Adding elements creates a new list
+val newList = immutableList :+ 4
+```
+
+#### Set:
+
+```scala
+// Creating an immutable set
+val immutableSet = Set(1, 2, 3)
+
+// Adding elements creates a new set
+val newSet = immutableSet + 4
+```
+
+#### Map:
+
+```scala
+// Creating an immutable map
+val immutableMap = Map("a" -> 1, "b" -> 2, "c" -> 3)
+
+// Adding key-value pairs creates a new map
+val newMap = immutableMap + ("d" -> 4)
+```
+
+#### Vector:
+
+```scala
+// Creating an immutable vector
+val immutableVector = Vector(1, 2, 3)
+
+// Adding elements creates a new vector
+val newVector = immutableVector :+ 4
+```
+
+#### Tuple:
+
+```scala
+// Creating an immutable tuple
+val immutableTuple = (1, "Hello", 3.14)
+
+// Extracting values from a tuple
+val (first, second, third) = immutableTuple
+```
+
+In all these examples, notice that operations that seem to modify the collection actually return a new instance of the collection with the desired changes, leaving the original collection unchanged. 
+
+This immutability is a key feature for functional programming in Scala and helps in writing more predictable and thread-safe code.
+
+
+### Mutable collections
+
 And the following figure shows all collections in package scala.collection.mutable.
 
 ![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/fa21af93-e143-43d2-89f4-e76cf6dfa5aa)
+
+
 
 ## 24. List
 
