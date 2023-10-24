@@ -105,17 +105,17 @@ object FactorialCalculator {
 
 In this example:
 
-Object-Oriented and Functional: We define a class FactorialCalculator to encapsulate the logic for calculating factorial.
+**Object-Oriented and Functional**: We define a class FactorialCalculator to encapsulate the logic for calculating factorial.
 
-Immutable Data: We use val for immutable variables, like number.
+**Immutable Data**: We use val for immutable variables, like number.
 
-Type Inference: The return type of the factorial method is not explicitly declared; Scala infers it.
+**Type Inference**: The return type of the factorial method is not explicitly declared; Scala infers it.
 
-Pattern Matching: We use pattern matching in the match block to handle different cases, including the base case where the number is 0.
+**Pattern Matching**: We use pattern matching in the match block to handle different cases, including the base case where the number is 0.
 
-Interoperability: Although we didn't explicitly use Java libraries in this example, Scala can easily interoperate with Java libraries.
+**Interoperability**: Although we didn't explicitly use Java libraries in this example, Scala can easily interoperate with Java libraries.
 
-Scalability: This example is simple, but Scala's features make it suitable for building larger and more complex systems.
+**Scalability**: This example is simple, but Scala's features make it suitable for building larger and more complex systems.
 
 Feel free to run this Scala code in an environment that supports Scala, and you should see the factorial of 5 printed to the console.
 
