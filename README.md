@@ -1530,7 +1530,7 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 # Programación funcional.
 
-## 57. High Order Functrions
+## 57. High Order Functions
 
 
 
