@@ -602,6 +602,18 @@ numbers.foreach { num =>
 
 ## 23. Collections
 
+The following figure shows all collections in package scala.collection. These are all high-level abstract classes or traits, which generally have mutable as well as immutable implementations.
+
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/ebf7b100-f86f-43c6-9875-1a69bc6374b3)
+
+The following figure shows all collections in package scala.collection.immutable.
+
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/19c430d3-f3f6-46cf-a9c5-c0abe910bf7f)
+
+And the following figure shows all collections in package scala.collection.mutable.
+
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/fa21af93-e143-43d2-89f4-e76cf6dfa5aa)
+
 ## 24. List
 
 ## 25. List operations
