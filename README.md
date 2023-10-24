@@ -1730,7 +1730,57 @@ Here, map, filter, and reduce are higher-order functions that take functions as 
 
 These advanced topics demonstrate the flexibility and conciseness that high-order functions bring to Scala, enabling you to write more expressive and modular code.
 
-## 58. Anonymous functions. Functions literals
+## 58. Anonymous functions.
+
+In Scala, anonymous functions are often referred to as "function literals" or "lambda expressions." 
+
+They are a concise way to create functions without explicitly providing a name. 
+
+The syntax for anonymous functions involves the => symbol.
+
+```scala
+// Define an anonymous function that takes two parameters and returns their sum
+val add: (Int, Int) => Int = (x, y) => x + y
+
+// Using the anonymous function
+val result = add(3, 5)
+println(result)  // Output: 8
+```
+
+In this example:
+
+val add declares a value (immutable) named add.
+
+(Int, Int) => Int specifies the types of parameters and the return type of the anonymous function.
+
+(x, y) => x + y is the actual anonymous function, where x and y are the parameters, and x + y is the expression to be evaluated.
+
+Here's another example using a higher-order function:
+
+```scala
+// Define a higher-order function that takes two integers and a function,
+// and applies the function to the integers
+def operateOnNumbers(x: Int, y: Int, operation: (Int, Int) => Int): Int = {
+  operation(x, y)
+}
+
+// Using the higher-order function with an anonymous function
+val result1 = operateOnNumbers(10, 5, (a, b) => a + b)
+val result2 = operateOnNumbers(10, 5, (a, b) => a * b)
+
+println(result1)  // Output: 15
+println(result2)  // Output: 50
+```
+
+In this example, operateOnNumbers is a higher-order function that takes two numbers and a function as parameters.
+
+It applies the provided function to the numbers.
+
+Anonymous functions are particularly handy when you need a short, one-off function for a specific operation. 
+
+They're concise and often used with higher-order functions like map, filter, and reduce in Scala.
+
+## Functions literals
 
 
 
