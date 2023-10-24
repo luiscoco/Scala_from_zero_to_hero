@@ -1677,7 +1677,57 @@ val personJson = toJson(Person("John", 25))
 
 ## 44. Inheritance
 
+Inheritance in Scala is similar to other object-oriented languages like Java, but Scala provides some additional features and flexibility.
 
+```scala
+// Define a base class
+class Animal(var name: String) {
+  def sound(): String = "Some generic sound"
+}
+
+// Create a subclass (inherits from Animal)
+class Dog(name: String, breed: String) extends Animal(name) {
+  override def sound(): String = "Woof"
+  
+  def fetch(): String = s"$name is fetching"
+}
+
+// Create another subclass (inherits from Animal)
+class Cat(name: String, color: String) extends Animal(name) {
+  override def sound(): String = "Meow"
+  
+  def climb(): String = s"$name is climbing"
+}
+
+// Create instances of the subclasses
+val myDog = new Dog("Buddy", "Labrador")
+val myCat = new Cat("Whiskers", "Gray")
+
+// Access methods from the base class and subclasses
+println(myDog.name)        // Output: Buddy
+println(myDog.sound())     // Output: Woof
+println(myDog.fetch())     // Output: Buddy is fetching
+
+println(myCat.name)        // Output: Whiskers
+println(myCat.sound())     // Output: Meow
+println(myCat.climb())     // Output: Whiskers is climbing
+```
+
+In this example:
+
+Animal is the base class with a property name and a method sound.
+
+Dog and Cat are subclasses that extend Animal. They inherit the name property and override the sound method with their specific implementation.
+
+Dog has an additional method fetch, and Cat has an additional method climb.
+
+Instances of Dog and Cat can access both the inherited methods from Animal and their own specific methods.
+
+The use of override keyword is important when you want to provide a specific implementation for a method in the subclass.
+
+Scala also supports abstract classes and traits, which provide more flexibility in designing class hierarchies. 
+
+Abstract classes can have abstract methods (methods without implementation), and traits are similar to Java interfaces.
 
 ## 45. Traits Part 1
 
