@@ -1528,7 +1528,85 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 
 
-# Programación funcional.
+# Functional programming
+
+Functional programming (FP) is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. 
+
+Scala is a versatile programming language that supports both object-oriented and functional programming.
+
+### Immutable Data:
+
+In functional programming, data is immutable, meaning once it's defined, it cannot be changed. 
+
+In Scala, you often use the **val** keyword for immutable values.
+
+```scala
+val x = 5
+// x = 7  // This would result in a compilation error
+```
+
+### First-Class Functions:
+
+Functions are first-class citizens, which means you can pass functions as arguments to other functions, return functions from functions, and assign functions to variables.
+
+```scala
+def add(x: Int, y: Int): Int = x + y
+
+val sum = add(3, 4)
+println(sum)  // Output: 7
+```
+
+### Higher-Order Functions:
+
+Higher-order functions take one or more functions as arguments or return a function.
+
+map, filter, and reduce are commonly used higher-order functions.
+
+```scala
+val numbers = List(1, 2, 3, 4, 5)
+
+val squared = numbers.map(x => x * x)
+// squared: List[Int] = List(1, 4, 9, 16, 25)
+
+val evens = numbers.filter(x => x % 2 == 0)
+// evens: List[Int] = List(2, 4)
+
+val sum = numbers.reduce((x, y) => x + y)
+// sum: Int = 15
+```
+
+### Pattern Matching:
+
+Pattern matching is a powerful feature in functional programming languages. 
+
+It allows you to match values against patterns and execute code based on the matched pattern.
+
+```scala
+def describe(x: Any): String = x match {
+  case 0 => "Zero"
+  case n if n > 0 => "Positive number"
+  case n if n < 0 => "Negative number"
+  case _ => "Other"
+}
+
+println(describe(5))  // Output: Positive number
+```
+
+### Recursion:
+
+Instead of using loops, functional programming often relies on recursion for repetitive tasks.
+
+```scala
+def factorial(n: Int): Int =
+  if (n <= 1) 1
+  else n * factorial(n - 1)
+
+println(factorial(5))  // Output: 120
+```
+
+These are just a few concepts and examples of functional programming in Scala.
+
+FP can lead to more concise, readable, and maintainable code by avoiding mutable state and side effects.
 
 ## 57. High Order Functions
 
