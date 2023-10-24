@@ -204,9 +204,9 @@ https://docs.scala-lang.org/tour/tour-of-scala.html
 
 ## 4. Tipos de descarga del software de Scala.
 
+https://www.scala-lang.org/download/
 
 ## 5. Instalación manual.
-
 
 ## 6. Instalación de IntelliJ Idea (Commnunity version).
 
