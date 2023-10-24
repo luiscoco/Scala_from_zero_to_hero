@@ -392,98 +392,98 @@ It's a good practice to use val by default and only use var when necessary for s
 
 ## 24. List.
 
-25. Operaciones con List.
+## 25. Operaciones con List.
 
-26. Más operaciones con List.
+## 26. Más operaciones con List.
 
-27. ListBuffer.
+## 27. ListBuffer.
 
-28. Array.
+## 28. Array.
 
-29. ArrayBuffer.
+## 29. ArrayBuffer.
 
-30. Set.
+## 30. Set.
 
-31. Map.
+## 31. Map.
 
-32. Funciones.
+## 32. Funciones.
 
-33. Procedimientos. Funciones que no devuelven valor.
+## 33. Procedimientos. Funciones que no devuelven valor.
 
-34. Funciones con parámetros.
+## 34. Funciones con parámetros.
 
-35. Parámetros con nombre.
+## 35. Parámetros con nombre.
 
-36. Parámetros por defecto.
+## 36. Parámetros por defecto.
 
-37. Número variable de parámetros.
+## 37. Número variable de parámetros.
 
-38. Crear aplicaciones con IntelliJ IDEA.
+## 38. Crear aplicaciones con IntelliJ IDEA.
 
-39. Mi primera aplicación Scala.
+## 39. Mi primera aplicación Scala.
 
-40. Crear una aplicación con el método "main".
+## 40. Crear una aplicación con el método "main".
 
-41. Compilar con scalac.
+## 41. Compilar con scalac.
 
-42. Clases Parte 1.
+## 42. Clases Parte 1.
 
-43. Clases Parte 2.
+## 43. Clases Parte 2.
 
-44. Herencia.
+## 44. Herencia.
 
-45. Traits Parte 1.
+## 45. Traits Parte 1.
 
-46. Traits Parte 2.
+## 46. Traits Parte 2.
 
-47. Traits Múltiples.
+## 47. Traits Múltiples.
 
-48. Modificadores de acceso: private, public, protected.
+## 48. Modificadores de acceso: private, public, protected.
 
-49. Constructores.
+## 49. Constructores.
 
-50. Constructores auxiliares.
+## 50. Constructores auxiliares.
 
-51. Constructores múltiples.
+## 51. Constructores múltiples.
 
-52. Singleton Objects.
+## 52. Singleton Objects.
 
-53. Companion Objects.
+## 53. Companion Objects.
 
-54. Crear Instancias son NEW.
+## 54. Crear Instancias son NEW.
 
-55. Case Class.
+## 55. Case Class.
 
-56. Clases Abstractas.
+## 56. Clases Abstractas.
 
-Programación funcional.
+# Programación funcional.
 
-57. High Order Functrions.
+## 57. High Order Functrions.
 
-58. Funciones anónimas. Functions literals.
+## 58. Funciones anónimas. Functions literals.
 
-59. Funciones con parámetros.
+## 59. Funciones con parámetros.
 
-60. Funciones como variable.
+## 60. Funciones como variable.
 
-61. Devolver una función.
+## 61. Devolver una función.
 
-62. Partially Applied Functions.
+## 62. Partially Applied Functions.
 
-63. Currying Functions.
+## 63. Currying Functions.
 
-64. Closures.
+## 64. Closures.
 
-65. Options.
+## 65. Options.
 
-66. Exceptions. Try Catch.
+## 66. Exceptions. Try Catch.
 
-67. Exceptions, finally.
+## 67. Exceptions, finally.
 
-68. Exceptions, Throw.
+## 68. Exceptions, Throw.
 
-69. Sobrecarga. Overloading.
+## 69. Sobrecarga. Overloading.
 
-70. Leer ficheros de texto.
+## 70. Leer ficheros de texto.
 
 71. Escribir y leer ficheros binarios.
