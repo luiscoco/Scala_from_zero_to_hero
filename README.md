@@ -655,6 +655,41 @@ Ranges in Scala are quite versatile and can be used in various situations where 
 
 ## 19. Default variables initialization
 
+in Scala, you can initialize variables with default values when you declare them. 
+
+This is handy when you want to ensure that a variable always has a meaningful value, even if it's not explicitly set by the programmer.
+
+```scala
+// Example 1: Initializing an Int with a default value
+var count: Int = _
+
+println(s"Count: $count") // Prints: Count: 0 (default value for Int)
+
+// Example 2: Initializing a String with a default value
+var name: String = _
+
+println(s"Name: $name") // Prints: Name: null (default value for String)
+
+// Example 3: Initializing a custom class with a default value
+class Person(var name: String = "Unknown", var age: Int = 0)
+
+val defaultPerson = new Person()
+println(s"Default Person - Name: ${defaultPerson.name}, Age: ${defaultPerson.age}")
+// Prints: Default Person - Name: Unknown, Age: 0
+```
+
+In these examples:
+
+In Example 1, count is an Int variable initialized with the default value of 0.
+
+In Example 2, name is a String variable initialized with the default value of null.
+
+In Example 3, a Person class is defined with default values for its parameters. 
+
+When creating a new Person without specifying values, it takes the default values.
+
+Default values make your code more robust by ensuring that variables have meaningful initial values, reducing the chance of unexpected behavior due to uninitialized variables.
+
 ## 20. Pattern Matching part 1
 
 ## 21. Pattern Matching part 2
