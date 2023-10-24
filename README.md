@@ -1587,3 +1587,115 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 
 ## 71. Binary files
+
+Reading and writing binary files in Scala involves using input and output streams to handle the raw binary data. Let me provide you with some simple examples.
+
+### Reading Binary File:
+
+```scala
+import java.io.{File, FileInputStream, DataInputStream}
+
+// Specify the path to your binary file
+val filePath = "path/to/your/file.bin"
+
+// Create a FileInputStream for the binary file
+val fileInputStream = new FileInputStream(new File(filePath))
+
+// Wrap the FileInputStream with a DataInputStream for convenient methods
+val dataInputStream = new DataInputStream(fileInputStream)
+
+try {
+  // Read bytes from the binary file
+  val byteArray = new Array[Byte](fileInputStream.available())
+  dataInputStream.readFully(byteArray)
+
+  // Process the binary data as needed
+  // ...
+
+} finally {
+  // Close the streams to release resources
+  dataInputStream.close()
+  fileInputStream.close()
+}
+````
+
+### Writing Binary File:
+
+```scala
+import java.io.{File, FileOutputStream, DataOutputStream}
+
+// Specify the path for the new binary file
+val filePath = "path/to/new/file.bin"
+
+// Create a FileOutputStream for the new binary file
+val fileOutputStream = new FileOutputStream(new File(filePath))
+
+// Wrap the FileOutputStream with a DataOutputStream for convenient methods
+val dataOutputStream = new DataOutputStream(fileOutputStream)
+
+try {
+  // Create a sample byte array to write to the binary file
+  val byteArray = Array[Byte](0x48, 0x65, 0x6C, 0x6C, 0x6F) // "Hello" in ASCII
+
+  // Write the byte array to the binary file
+  dataOutputStream.write(byteArray)
+
+  // Optionally, write more data
+  // ...
+
+} finally {
+  // Close the streams to release resources
+  dataOutputStream.close()
+  fileOutputStream.close()
+}
+```
+
+In these examples, DataInputStream and DataOutputStream provide convenient methods for reading and writing various primitive data types.
+
+Adjust the code as needed based on the specific format and structure of your binary file. 
+
+Keep in mind that error handling, such as using try-with-resources, is crucial to ensure proper resource management.
+
+Creating and deleting a binary file in Scala involves using the java.nio.file package. Here's a simple example:
+
+### Creating a Binary File:
+
+```scala
+import java.nio.file.{Files, Paths, StandardOpenOption}
+import java.nio.ByteBuffer
+
+// Specify the path for the new binary file
+val filePath = "path/to/new/file.bin"
+
+// Sample data to write to the binary file
+val data = Array[Byte](0x48, 0x65, 0x6C, 0x6C, 0x6F) // "Hello" in ASCII
+
+// Use ByteBuffer to write binary data
+val buffer = ByteBuffer.wrap(data)
+
+// Create the binary file
+Files.write(Paths.get(filePath), buffer.array(), StandardOpenOption.CREATE)
+```
+
+### Deleting a Binary File:
+
+```scala
+import java.nio.file.{Files, Paths}
+
+// Specify the path of the binary file to delete
+val filePathToDelete = "path/to/new/file.bin"
+
+// Delete the binary file
+Files.deleteIfExists(Paths.get(filePathToDelete))
+```
+
+In the creation example, we use Files.write to write the binary data to the specified file path. We use ByteBuffer to wrap the byte array for convenient writing.
+
+Adjust the StandardOpenOption based on your requirements (e.g., StandardOpenOption.CREATE_NEW to create a new file only if it does not exist).
+
+In the deletion example, we use Files.deleteIfExists to delete the file at the specified path.
+
+It ensures that the file is deleted if it exists, and it won't throw an exception if the file doesn't exist.
+
+Make sure to handle exceptions appropriately in your actual code to account for cases where file operations might fail, especially when dealing with file I/O.
+
