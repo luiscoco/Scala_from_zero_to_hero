@@ -366,6 +366,38 @@ It's a good practice to use val by default and only use var when necessary for s
 
 ## 11. Create variable in lazy mode
 
+In Scala, you can create variables in lazy mode using the **lazy** keyword.
+
+A lazy variable is only evaluated when it is accessed for the first time, and its value is then cached for future use. 
+
+This can be useful for delaying the initialization of expensive operations or computations until they are actually needed.
+
+```scala
+object LazyExample extends App {
+  // Define a lazy variable
+  lazy val expensiveOperation: String = {
+    println("Executing expensive operation")
+    "Result of expensive operation"
+  }
+
+  // The expensive operation is not executed yet
+
+  // Access the lazy variable
+  println("Accessing lazy variable:")
+  println(expensiveOperation)
+  
+  // Since the lazy variable has been accessed, the expensive operation is now executed
+}
+```
+
+In this example, the expensiveOperation is a lazy variable.
+
+The actual execution of the code inside the lazy val is deferred until the variable is accessed.
+
+When you run this program, you'll see that the "Executing expensive operation" message is only printed when the expensiveOperation variable is accessed for the first time.
+
+This lazy evaluation can be beneficial in situations where you want to avoid unnecessary computations until the value is actually needed.
+
 ## 12. Variables and constants practices
 
 ## 13. Comments
