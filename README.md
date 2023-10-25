@@ -2136,8 +2136,47 @@ It's a powerful mechanism for composing classes with reusable and modular behavi
 
 ## 55. Case class
 
+In Scala, a case class is a special type of class that is often used for immutable data modeling. 
 
+It is a shorthand syntax that automatically provides several commonly needed features, making it concise and convenient.
 
+Here are some key characteristics of case classes:
+
+Immutable by Default: All parameters of a case class are automatically treated as val (immutable).
+
+Default toString, equals, and hashCode: Case classes automatically provide a toString method for easy debugging, an equals method for structural equality, and a hashCode method for hash-based collections.
+
+**Pattern Matching:** Case classes are particularly useful in pattern matching. You can use them in match expressions to destructure instances easily.
+
+Companion Object with Apply Method: Scala automatically creates a companion object for each case class, containing an apply method. 
+
+This allows you to create instances of the case class without using the new keyword.
+
+```scala
+case class Point(x: Int, y: Int)
+
+// Creating an instance without 'new'
+val p = Point(1, 2)
+
+// Pattern matching
+p match {
+  case Point(0, 0) => println("Origin")
+  case Point(x, 0) => println(s"X-axis at $x")
+  case Point(0, y) => println(s"Y-axis at $y")
+  case Point(x, y) => println(s"Point at ($x, $y)")
+}
+
+// toString, equals, and hashCode are automatically provided
+println(p) // Prints: Point(1, 2)
+```
+
+In this example, Point is a case class with two parameters x and y. T
+
+he apply method in the companion object allows us to create instances without using new.
+
+The pattern matching demonstrates how you can destructure instances easily.
+
+Case classes are widely used in Scala for modeling data because they provide a concise syntax and many useful features out of the box
 
 ## 56. Abstract class
 
