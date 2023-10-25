@@ -6,8 +6,6 @@ https://github.com/vadopolski?page=2&tab=repositories
 
 https://www.scala-sbt.org/download.html
 
-[Go to Real Cool Heading section](#Main differences between Scala and Java)
-
 ## 1. Scala introduction
 
 Scala is a powerful programming language that seamlessly combines object-oriented and functional programming paradigms. Here's a brief introduction:
@@ -194,8 +192,6 @@ However, it can lead to more expressive and concise code once mastered.
 These differences highlight the unique features and design principles of each language.
 
 While Java remains a dominant language in the industry, Scala offers a more expressive and scalable alternative, especially for those interested in functional programming.
-
-#Main differences between Scala and Java
 
 ## 3. Scala web pages
 
