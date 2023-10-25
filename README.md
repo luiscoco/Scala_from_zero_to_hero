@@ -1679,8 +1679,139 @@ These advanced concepts should give you a deeper understanding of how to work wi
 
 ## 41. Compile with scalac
 
+**scalac** is the Scala compiler that compiles Scala source code (.scala files) into Java bytecode (.class files).
 
+### Write Scala Code:
 
+Create a file named Hello.scala with the following Scala code:
+
+```scala
+object Hello {
+  def main(args: Array[String]): Unit = {
+    println("Hello, Scala!")
+  }
+}
+```
+
+This program defines an object named Hello with a main method that prints "Hello, Scala!" to the console.
+
+### Open Terminal:
+
+Open a terminal window in the directory where your Hello.scala file is located.
+
+### Compile with scalac:
+
+Run the following command to compile your Scala code:
+
+```bash
+scalac Hello.scala
+```
+
+If everything is set up correctly, this command should produce one or more .class files.
+
+### Run the Compiled Code:
+
+After compiling, you can run the compiled code using the scala command. In this case, the compiled class file is named Hello.class:
+
+```bash
+scala Hello
+```
+
+This should execute your Scala program, and you should see the output:
+
+```
+Hello, Scala!
+```
+
+Scala is a rich and expressive language, and there are several advanced topics you can explore when working with scalac. Here are a few:
+
+### Packages:
+
+You can organize your Scala code into packages. Let's say you want to organize your Hello object into a package named com.example:
+
+```scala
+package com.example
+
+object Hello {
+  def main(args: Array[String]): Unit = {
+    println("Hello, Scala!")
+  }
+}
+```
+
+After making this change, you need to create a directory structure that matches the package structure. For example:
+
+```markdown
+project-root
+└── com
+    └── example
+        └── Hello.scala
+```
+
+Then, compile using:
+
+```bash
+scalac com/example/Hello.scala
+```
+
+And run:
+
+```bash
+scala com.example.Hello
+```
+
+### Classpath:
+
+When dealing with multiple source files or dependencies, you might need to manage the classpath. 
+
+You can use the -classpath option to specify the classpath. For example:
+
+```bash
+scalac -classpath path/to/dependency.jar Hello.scala
+```
+
+### Implicit Conversions:
+
+Scala allows you to define implicit conversions, which can be handy for providing automatic type conversions.
+
+```scala
+object ImplicitsExample {
+  implicit def intToString(x: Int): String = x.toString
+
+  def main(args: Array[String]): Unit = {
+    val myString: String = 42
+    println(myString)
+  }
+}
+```
+
+This program defines an implicit conversion from Int to String, allowing you to assign an Int to a String variable.
+
+### Annotations:
+
+Scala supports annotations that provide additional information to the compiler or runtime. 
+
+For instance, you can use @deprecated to mark methods as deprecated:
+
+```scala
+object DeprecatedExample {
+  @deprecated("Use newMethod instead", "1.0")
+  def oldMethod(): Unit = {
+    println("This method is deprecated.")
+  }
+
+  def newMethod(): Unit = {
+    println("This is the new method.")
+  }
+
+  def main(args: Array[String]): Unit = {
+    oldMethod()
+    newMethod()
+  }
+}
+```
+
+The @deprecated annotation will generate a warning when you compile code using the deprecated method.
 
 ## 42. Clases Part 1
 
