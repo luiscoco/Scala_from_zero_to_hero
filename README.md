@@ -1387,11 +1387,155 @@ Remember, while mutable collections offer flexibility, it's generally recommende
 
 ## 24. List
 
+In Scala, a List is a collection of ordered elements of the same type. 
 
+Lists are **immutable**, which means that their elements cannot be changed once they are defined.
+
+### Creating Lists:
+
+You can create a list using the List keyword:
+
+```scala
+val numbers: List[Int] = List(1, 2, 3, 4, 5)
+```
+
+### Accessing Elements:
+
+You can access elements by their index:
+
+```scala
+val firstElement = numbers(0)  // Result: 1
+```
+
+### Adding Elements:
+
+You can add elements using the :: operator, which is pronounced "cons":
+
+```scala
+val newNumbers = 0 :: numbers  // Result: List(0, 1, 2, 3, 4, 5)
+```
+
+#### Concatenating Lists:
+
+You can concatenate two lists using the ++ operator:
+
+```scala
+val moreNumbers: List[Int] = List(6, 7, 8)
+val allNumbers = numbers ++ moreNumbers  // Result: List(1, 2, 3, 4, 5, 6, 7, 8)
+```
+
+### Checking if List is Empty:
+
+You can check if a list is empty using the isEmpty method:
+
+```scala
+val emptyList: List[Int] = List()
+val isNotEmpty = numbers.isEmpty  // Result: false
+val isEmpty = emptyList.isEmpty    // Result: true
+```
+
+### Map and Filter:
+
+You can use map and filter to transform and filter elements:
+
+```scala
+val squaredNumbers = numbers.map(x => x * x)  // Result: List(1, 4, 9, 16, 25)
+val evenNumbers = numbers.filter(x => x % 2 == 0)  // Result: List(2, 4)
+```
 
 ## 25. List operations
 
+Scala is a versatile programming language that runs on the Java Virtual Machine (JVM) and combines object-oriented and functional programming features. 
 
+These examples cover some of the fundamental list operations in Scala.
+
+### Creating Lists:
+
+```scala
+// Immutable list
+val numbers = List(1, 2, 3, 4, 5)
+
+// Mutable list
+var fruits = scala.collection.mutable.ListBuffer("Apple", "Banana", "Orange")
+```
+
+### Accessing Elements:
+
+```scala
+val firstElement = numbers.head
+val lastElement = numbers.last
+val secondElement = numbers(1)
+```
+
+### Adding Elements:
+
+```scala
+// Adding elements to the end
+val newNumbers = numbers :+ 6
+
+// Adding elements to the beginning
+val updatedNumbers = 0 +: numbers
+```
+
+### Removing Elements:
+
+```scala
+// Removing elements from the end
+val shorterList = numbers.dropRight(1)
+
+// Removing elements from the beginning
+val smallerList = numbers.drop(1)
+```
+
+### Mapping and Transforming:
+
+```scala
+// Doubling each element
+val doubledNumbers = numbers.map(x => x * 2)
+
+// Transforming elements with pattern matching
+val result = numbers.map {
+  case x if x % 2 == 0 => "even"
+  case x => "odd"
+}
+```
+
+### Filtering:
+
+```scala
+// Keeping only even numbers
+val evenNumbers = numbers.filter(_ % 2 == 0)
+Folding (Reducing):
+```
+
+```scala
+// Summing all elements
+val sum = numbers.foldLeft(0)(_ + _)
+```
+
+### Concatenating Lists:
+
+```scala
+val moreNumbers = List(7, 8, 9)
+val combinedList = numbers ++ moreNumbers
+```
+
+### Iterating Over Elements:
+
+```scala
+// Printing each element
+numbers.foreach(println)
+```
+
+### Checking Conditions:
+
+```scala
+// Checking if all elements are positive
+val allPositive = numbers.forall(_ > 0)
+
+// Checking if any element is even
+val anyEven = numbers.exists(_ % 2 == 0)
+```
 
 ## 26. More operations with List
 
