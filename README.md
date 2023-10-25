@@ -2142,9 +2142,9 @@ It is a shorthand syntax that automatically provides several commonly needed fea
 
 Here are some key characteristics of case classes:
 
-Immutable by Default: All parameters of a case class are automatically treated as val (immutable).
+**Immutable by Default:** All parameters of a case class are automatically treated as val (immutable).
 
-Default toString, equals, and hashCode: Case classes automatically provide a toString method for easy debugging, an equals method for structural equality, and a hashCode method for hash-based collections.
+**Default toString, equals, and hashCode:** Case classes automatically provide a toString method for easy debugging, an equals method for structural equality, and a hashCode method for hash-based collections.
 
 **Pattern Matching:** Case classes are particularly useful in pattern matching. You can use them in match expressions to destructure instances easily.
 
@@ -2184,7 +2184,7 @@ Case classes are widely used in Scala for modeling data because they provide a c
 
 
 
-# Functional programming
+# FUNCTIONAL PROGRAMMING
 
 Functional programming (FP) is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. 
 
