@@ -2734,7 +2734,92 @@ It also aligns well with the concept of partial function application, allowing y
 
 ## 64. Closures
 
+In Scala, closures are a powerful feature that allows functions to capture and use variables from their lexical scope. 
 
+A closure is a function whose return value depends on the values of variables declared outside of the function.
+
+```scala
+// Define a function that takes a parameter and returns another function
+def outerFunction(x: Int): Int => Int = {
+  // This inner function is a closure because it "closes over" the variable 'x'
+  (y: Int) => x + y
+}
+
+// Call outerFunction with an argument
+val closure = outerFunction(10)
+
+// Now, 'closure' is a function that remembers the value of 'x' from the outer scope
+val result = closure(5) // result is 15 (10 + 5)
+```
+
+In this example, outerFunction takes an Int parameter x and returns a function that takes another Int parameter y. 
+
+The inner function (y: Int) => x + y is a closure because it uses the variable x from its outer scope. When we call outerFunction(10), it returns a closure, and we assign it to the variable closure. 
+
+Later, when we call closure(5), it adds the captured value of x (which is 10) to the argument y, resulting in 15.
+
+Closures are useful for creating functions with behavior that depends on some context or configuration provided during their creation.
+
+### Example 1: Closure with Mutable State
+
+```scala
+def counter(): () => Int = {
+  var count = 0
+
+  // This closure has access to the mutable variable 'count'
+  () => {
+    count += 1
+    count
+  }
+}
+
+val myCounter = counter()
+println(myCounter()) // Output: 1
+println(myCounter()) // Output: 2
+```
+
+In this example, the counter function returns a closure that maintains a mutable state (count).
+
+Each time the closure is called, it increments the count and returns the updated value.
+
+### Example 2: Closure with Function Parameter
+
+```scala
+def multiplier(factor: Int): Int => Int = {
+  // This closure takes an additional parameter 'x' and multiplies it by 'factor'
+  (x: Int) => x * factor
+}
+
+val multiplyByTwo = multiplier(2)
+val multiplyByFive = multiplier(5)
+
+println(multiplyByTwo(3))   // Output: 6 (3 * 2)
+println(multiplyByFive(4))  // Output: 20 (4 * 5)
+```
+
+Here, the multiplier function returns a closure that multiplies its parameter by the factor provided during the creation of the closure.
+
+This allows you to create specialized multiplier functions.
+
+### Example 3: Closure for Callbacks
+
+```scala
+def performOperation(callback: Int => Unit): Unit = {
+  val result = 42
+  // The closure 'callback' is called with the result
+  callback(result)
+}
+
+// Define a closure to be passed as a callback
+val printResult: Int => Unit = (result: Int) => println(s"Result is: $result")
+
+// Pass the closure as a callback to the function
+performOperation(printResult)
+```
+
+In this example, the performOperation function takes a closure (callback) as a parameter. 
+
+The closure is later called within the function, allowing you to define custom behavior when calling performOperation. Here, it prints the result, but you can pass different closures for different behaviors.
 
 ## 65. Options
 
