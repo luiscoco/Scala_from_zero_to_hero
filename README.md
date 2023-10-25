@@ -2004,6 +2004,100 @@ Classes implementing Drawable can choose to override erase or use the default im
 
 ## 47. Multiple Traits
 
+In Scala, a class can extend multiple traits, allowing you to mix in multiple sets of behavior into a single class. 
+
+This feature is known as "multiple inheritance" or "trait stacking."
+
+### 1. Basic Example:
+
+```scala
+trait Logger {
+  def log(message: String): Unit = println(s"Log: $message")
+}
+
+trait DataProcessor {
+  def processData(data: String): String
+}
+
+class MyService extends Logger with DataProcessor {
+  def doSomething(): Unit = {
+    log("Doing something...")
+    val result = processData("Some data")
+    log(s"Result: $result")
+  }
+
+  def processData(data: String): String = s"Processed: $data"
+}
+
+val service = new MyService
+service.doSomething()
+
+// Output:
+// Log: Doing something...
+// Log: Result: Processed: Some data
+```
+
+Here, MyService class extends both Logger and DataProcessor traits. 
+
+It inherits the log method from Logger and implements the processData method required by the DataProcessor trait.
+
+### 2. Order of Trait Evaluation:
+
+```scala
+trait A {
+  def message(): String = "A"
+}
+
+trait B extends A {
+  override def message(): String = s"B - ${super.message()}"
+}
+
+trait C extends A {
+  override def message(): String = s"C - ${super.message()}"
+}
+
+class D extends B with C
+
+val instance = new D
+println(instance.message())
+
+// Output: C - B - A
+```
+
+When a class extends multiple traits with a common ancestor (A in this case), the traits are evaluated from left to right. 
+
+In the example, D extends B and C, so the message method is first called from C and then from B. super.message() invokes the method from the next trait in the hierarchy.
+
+### 3. Diamond Problem Resolution:
+
+```scala
+trait A {
+  def message(): String = "A"
+}
+
+trait B extends A {
+  override def message(): String = s"B - ${super.message()}"
+}
+
+trait C extends A {
+  override def message(): String = s"C - ${super.message()}"
+}
+
+class D extends B with C
+
+val instance = new D
+println(instance.message())
+
+// Output: C - B - A
+```
+
+In the context of multiple inheritance, Scala resolves the "Diamond Problem" by linearizing the class and trait hierarchy. 
+
+In the example, D linearizes to D -> B -> C -> A, and the message method is called in that order.
+
+These examples demonstrate the flexibility and order of trait evaluation in Scala when multiple traits are involved. 
+
+It's a powerful mechanism for composing classes with reusable and modular behavior.
 
 
 ## 48. Access modifiers: private, public, protected.
