@@ -2543,7 +2543,37 @@ Function literals in Scala are powerful and provide a concise way to express fun
 
 ## 60. Functions as variables
 
+In Scala, functions are first-class citizens, which means you can treat them like any other value, including assigning them to variables. 
 
+This concept is often referred to as "functions as variables" or "functions as first-class values."
+
+```scala
+// Define a function that takes two integers and returns their sum
+val add: (Int, Int) => Int = (a, b) => a + b
+
+// Define another function that takes two integers and returns their product
+val multiply: (Int, Int) => Int = (a, b) => a * b
+
+// Now, you can use these functions like any other variable
+val result1 = add(3, 5) // result1 is now 8
+val result2 = multiply(2, 4) // result2 is now 8
+
+// Functions can be passed as parameters to other functions
+def applyOperation(x: Int, y: Int, operation: (Int, Int) => Int): Int = {
+  operation(x, y)
+}
+
+// Use the applyOperation function with the add function
+val result3 = applyOperation(4, 6, add) // result3 is now 10
+```
+
+In this example:
+
+**add** and **multiply** are variables that store functions taking two integers and returning an integer.
+
+The applyOperation function takes two integers and a function as parameters, applying the function to the integers.
+
+This flexibility allows you to create higher-order functions, functions that take other functions as parameters or return them as results, making your code more expressive and concise.
 
 ## 61. Return a function
 
