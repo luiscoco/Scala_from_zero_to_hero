@@ -2608,7 +2608,27 @@ This flexibility allows you to create higher-order functions, functions that tak
 
 ## 61. Return a function
 
+In Scala, you can return a function just like any other value. 
 
+```scala
+// Define a function that takes an Int and returns another function
+def multiplyBy(factor: Int): Int => Int = {
+  (x: Int) => x * factor
+}
+
+// Usage example
+val multiplyByTwo: Int => Int = multiplyBy(2)
+val result = multiplyByTwo(5) // This will be 5 * 2 = 10
+println(result)
+```
+
+In this example, multiplyBy is a function that takes an Int parameter (factor) and returns another function of type Int => Int. 
+
+The returned function, in this case, is a function that takes an Int and multiplies it by the factor.
+
+So, when you call multiplyBy(2), it returns a function that multiplies its input by 2. 
+
+Then, you can use the returned function (multiplyByTwo) to multiply any other number by 2.
 
 ## 62. Partially Applied Functions
 
