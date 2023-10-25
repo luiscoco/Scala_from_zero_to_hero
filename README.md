@@ -2180,9 +2180,51 @@ Case classes are widely used in Scala for modeling data because they provide a c
 
 ## 56. Abstract class
 
+In Scala, an abstract class is a class that cannot be instantiated on its own and is meant to be extended by other classes. 
 
+It can contain both abstract and non-abstract (concrete) members. 
 
+Abstract members are those that are declared but not implemented in the abstract class.
 
+```scala
+// Abstract class
+abstract class Shape {
+  // Abstract method (no implementation)
+  def area(): Double
+
+  // Concrete method with implementation
+  def displayArea(): Unit = {
+    println(s"Area: ${area()}")
+  }
+}
+
+// Concrete class extending the abstract class
+class Circle(radius: Double) extends Shape {
+  // Implementing the abstract method
+  def area(): Double = math.Pi * radius * radius
+}
+
+// Concrete class extending the abstract class
+class Rectangle(width: Double, height: Double) extends Shape {
+  // Implementing the abstract method
+  def area(): Double = width * height
+}
+
+// Usage
+val circle = new Circle(5.0)
+circle.displayArea() // Output: Area: 78.53981633974483
+
+val rectangle = new Rectangle(3.0, 4.0)
+rectangle.displayArea() // Output: Area: 12.0
+```
+
+In this example, Shape is an abstract class with an abstract method area() and a concrete method displayArea(). 
+
+The Circle and Rectangle classes extend the Shape class and provide implementations for the abstract method area(). 
+
+Instances of Circle and Rectangle can then be used to calculate and display their respective areas.
+
+Abstract classes in Scala provide a way to define a common interface for a group of related classes while allowing some methods to be deferred to the subclasses.
 
 # FUNCTIONAL PROGRAMMING
 
