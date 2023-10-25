@@ -2539,7 +2539,38 @@ Function literals in Scala are powerful and provide a concise way to express fun
 
 ## 59. Functions with parameters
 
+In Scala, you can define functions with parameters just like in many other programming languages.
 
+```scala
+// Define a function named "sum" that takes two parameters, x and y
+def sum(x: Int, y: Int): Int = {
+  // The body of the function calculates the sum of x and y
+  val result = x + y
+  
+  // The result is automatically returned because it's the last expression in the function
+  result
+}
+
+// Now you can call the function with specific values
+val result = sum(3, 5)
+
+// Print the result
+println(s"The sum is: $result")
+```
+
+In this example:
+
+def sum(x: Int, y: Int): Int declares a function named "sum" that takes two parameters (x and y), both of type Int, and returns an Int.
+
+The body of the function is enclosed in curly braces {}.
+
+Inside the function, the sum of x and y is calculated and stored in a variable named result.
+
+The result is automatically returned from the function because it's the last expression in the function.
+
+When you call the function with sum(3, 5), it returns the sum of 3 and 5, which is then stored in the result variable. Finally, the program prints the result.
+
+You can customize the types of parameters and the return type based on the requirements of your function.
 
 ## 60. Functions as variables
 
