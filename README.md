@@ -2683,7 +2683,54 @@ Partially applied functions are useful in situations where you want to reuse fun
 
 ## 63. Currying Functions
 
+![image](https://github.com/luiscoco/Udemy_Scala_desde_cero/assets/32194879/c53975a1-94be-40c7-805e-725070e473a3)
 
+Currying is a technique in functional programming where a **function with multiple arguments is transformed into a series of functions, each taking a single argument**. 
+
+In Scala, this is quite elegant to achieve. Let's look at an example:
+
+```scala
+// Non-curried function
+def add(x: Int, y: Int): Int = x + y
+
+// Curried function
+def curriedAdd(x: Int)(y: Int): Int = x + y
+```
+
+In the non-curried function add, you pass both arguments at once, like add(3, 5). 
+
+In the curried version curriedAdd, you pass the arguments one at a time, like curriedAdd(3)(5). 
+
+You can also partially apply the function, providing one argument at a time and getting a new function:
+
+```scala
+val add3 = curriedAdd(3) _  // Partially applying the first argument
+val result = add3(5)        // Applying the second argument
+```
+
+Here's another example to demonstrate currying with a function that concatenates strings:
+
+```scala
+// Non-curried function
+def concatenate(a: String, b: String): String = a + b
+
+// Curried function
+def curriedConcatenate(a: String)(b: String): String = a + b
+```
+
+Usage:
+
+```scala
+val resultNonCurried = concatenate("Hello, ", "world!")
+val resultCurried = curriedConcatenate("Hello, ")("world!")
+
+val partiallyApplied = curriedConcatenate("Hello, ") _  // Partially applying the first argument
+val finalResult = partiallyApplied("world!")
+```
+
+Currying can be particularly useful in functional programming paradigms and can make code more modular and composable.
+
+It also aligns well with the concept of partial function application, allowing you to create specialized versions of functions easily.
 
 ## 64. Closures
 
