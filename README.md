@@ -2632,7 +2632,54 @@ Then, you can use the returned function (multiplyByTwo) to multiply any other nu
 
 ## 62. Partially Applied Functions
 
+In Scala, a partially applied function is a function that you don't apply to all of its arguments. 
 
+Instead, you fix some of the parameters, creating a new function with a smaller arity (number of parameters).
+
+Let's say we have a simple function that adds three numbers:
+
+```scala
+def addThreeNumbers(a: Int, b: Int, c: Int): Int = {
+  a + b + c
+}
+```
+
+Now, you can partially apply this function by fixing one or more parameters. Here are some examples:
+
+Fixing the first parameter:
+
+```scala
+Copy code
+val addWith5And6: (Int, Int) => Int = addThreeNumbers(5, 6, _)
+val result1 = addWith5And6(7) // equivalent to addThreeNumbers(5, 6, 7)
+```
+
+In this example, addWith5And6 is a partially applied function that takes two parameters. 
+
+When you call it with one more parameter (7 in this case), it completes the function by applying the fixed parameters and the new parameter.
+
+Fixing the last parameter:
+
+```scala
+Copy code
+val addWith5And6Again: (Int, Int) => Int = addThreeNumbers(_, 5, 6)
+val result2 = addWith5And6Again(7) // equivalent to addThreeNumbers(7, 5, 6)
+```
+
+Here, we fixed the last two parameters, creating a new function that takes only one parameter.
+
+When you call it with 7, it completes the function by applying the fixed parameters and the new parameter.
+
+Fixing multiple parameters:
+
+```scala
+val addWith5: (Int, Int) => Int = addThreeNumbers(5, _, _)
+val result3 = addWith5(6, 7) // equivalent to addThreeNumbers(5, 6, 7)
+```
+
+In this case, we fixed the first parameter, creating a function that takes two parameters. When you call it with 6 and 7, it completes the function.
+
+Partially applied functions are useful in situations where you want to reuse functions with some fixed parameters, creating more concise and specialized functions.
 
 ## 63. Currying Functions
 
