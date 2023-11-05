@@ -1,4 +1,4 @@
-# Udemy_Scala_desde_cero
+# Scala_from_zero_to_hero
 
 https://superruzafa.github.io/visual-scala-reference/
 
